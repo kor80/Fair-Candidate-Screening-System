@@ -7,13 +7,7 @@ build:
 
 python:
   install:
-    - method: pip
-      packages:
-        - sphinx
-        - nbsphinx
-        - myst-parser
-        - ipython
-        - ipykernel
+    - requirements: docs/requirements.txt
 
 sphinx:
   configuration: docs/conf.py
