@@ -15,5 +15,6 @@ nbsphinx_execute = 'never'  # or 'auto' if you want to run notebooks on build
 templates_path = ['_templates']
 exclude_patterns = []
 
-html_theme = 'alabaster'
+html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
+
