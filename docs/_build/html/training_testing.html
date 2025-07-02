@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3. Training and Testing &#8212; Fair-Candidate-Screening-System 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="training-and-testing">
+<h1>3. Training and Testing<a class="headerlink" href="#training-and-testing" title="Link to this heading">¶</a></h1>
+<p>This section describes the training and evaluation process for the classification models, including both standard (no mitigation) and fairness-aware (with mitigation) approaches. All models are validated using a 5-fold cross-validation strategy.</p>
+<section id="evaluation-setup">
+<h2>Evaluation Setup<a class="headerlink" href="#evaluation-setup" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Validation strategy:</strong> 5-fold cross-validation</p></li>
+<li><p><strong>Metrics:</strong>
+- <strong>Performance metrics:</strong> Accuracy, Precision, Recall, F1-score, AUC
+- <strong>Fairness metrics:</strong> Demographic Parity, Equalized Odds Ratio</p></li>
+<li><p><strong>Comparison:</strong> Results are shown both <strong>with</strong> and <strong>without mitigation techniques</strong></p></li>
+</ul>
+</section>
+<section id="visualization">
+<h2>Visualization<a class="headerlink" href="#visualization" title="Link to this heading">¶</a></h2>
+<p>The following plots are generated to visualize performance and fairness:</p>
+<ul class="simple">
+<li><p><strong>Performance column bar plot:</strong>
+Displays mean ± standard deviation across folds for each performance metric
+(two subplots: <em>without</em> mitigation, <em>with</em> mitigation)</p></li>
+<li><p><strong>Fairness column bar plot:</strong>
+Displays mean ± standard deviation across folds for each fairness metric
+(two subplots: <em>without</em> mitigation, <em>with</em> mitigation)</p></li>
+</ul>
+</section>
+<section id="pre-processing-mitigation">
+<h2>3.1 Pre-processing Mitigation<a class="headerlink" href="#pre-processing-mitigation" title="Link to this heading">¶</a></h2>
+<p>Pre-processing mitigation techniques are applied <strong>before training</strong> to reduce bias in the data itself.</p>
+<ul class="simple">
+<li><p>A comparison is made between the <strong>original dataset</strong> and the <strong>transformed dataset</strong> using a coordinate plot</p></li>
+<li><p>Techniques used may include:
+- Reweighting
+- Resampling (e.g., oversampling minority group)
+- Fair representation learning (e.g., learning latent fair embeddings)</p></li>
+</ul>
+<p>These methods aim to remove correlations between sensitive features and the target variable before any model sees the data.</p>
+</section>
+<section id="in-processing-mitigation">
+<h2>3.2 In-processing Mitigation<a class="headerlink" href="#in-processing-mitigation" title="Link to this heading">¶</a></h2>
+<p>In-processing methods are applied <strong>during model training</strong>, modifying the learning process itself to enforce fairness constraints directly within the optimization loop.</p>
+<p>We experimented with three main fairness-aware algorithms:</p>
+<ul class="simple">
+<li><p><strong>Adversarial Debiasing</strong></p></li>
+<li><p><strong>FaUCI (Fair Uncertainty-aware Classification Index)</strong></p></li>
+<li><p><strong>Prejudice Removal</strong></p></li>
+</ul>
+<p>These methods aim to <strong>jointly optimize predictive performance and fairness</strong>, using different fairness regularization strategies.</p>
+<p>Among these, <strong>Adversarial Debiasing consistently achieved the best trade-off</strong> between fairness and accuracy. It works by introducing an adversarial component that learns to predict the sensitive attribute, while the main model is trained to minimize its predictive power. This leads to internal representations that are less biased and more equitable across groups.</p>
+<p>In contrast, <strong>FaUCI and Prejudice Removal</strong> showed limited improvement in fairness, even when tuning regularization strengths (<cite>lambda</cite>, <cite>eta</cite>). The main bottleneck was the <strong>lack of sufficient examples from minority sensitive groups</strong>, which prevented the algorithms from learning generalizable fairness constraints. Data augmentation partially mitigated this issue, improving fairness outcomes for underrepresented subgroups.</p>
+<p>Furthermore, we observed that <strong>fairness metrics degraded when using standard k-fold cross-validation</strong>, due to the absence of stratification over sensitive attributes. Some folds lacked representation for certain groups, making fairness evaluation unreliable. When using a <strong>stratified split based on the sensitive feature</strong>, both fairness training and evaluation improved significantly.</p>
+<p>For this reason, we strongly recommend using <strong>stratified cross-validation over sensitive attributes</strong> when training and evaluating fairness-aware models.</p>
+</section>
+<section id="analysis-of-in-processing-techniques">
+<h2>3.3 Analysis of In-processing Techniques<a class="headerlink" href="#analysis-of-in-processing-techniques" title="Link to this heading">¶</a></h2>
+<p>This section focuses on the evaluation of in-processing mitigation strategies used during model training. The primary goal was to reduce bias while maintaining model performance.</p>
+</section>
+<section id="adversarial-debiasing">
+<h2>Adversarial Debiasing<a class="headerlink" href="#adversarial-debiasing" title="Link to this heading">¶</a></h2>
+<p>Among the methods tested, <strong>Adversarial Debiasing</strong> showed the most promising results across both fairness and performance metrics.</p>
+<ul class="simple">
+<li><p>This technique trains a secondary adversarial model that tries to <strong>predict the sensitive attribute</strong> from the main model’s internal representation.</p></li>
+<li><p>Simultaneously, the main model is optimized to <strong>prevent the adversary from succeeding</strong>, thereby learning representations that are <strong>informative but not biased</strong>.</p></li>
+<li><p>In our experiments, Adversarial Debiasing consistently <strong>reduced Disparity Metrics</strong> such as Demographic Parity and Equalized Odds, while maintaining high performance (e.g., F1-score, AUC).</p></li>
+<li><p>It also proved to be <strong>robust with minimal hyperparameter tuning</strong>, making it the most effective of the evaluated in-processing techniques.</p></li>
+</ul>
+</section>
+<section id="fauci-and-prejudice-removal">
+<h2>FaUCI and Prejudice Removal<a class="headerlink" href="#fauci-and-prejudice-removal" title="Link to this heading">¶</a></h2>
+<p>The other two in-processing methods—<strong>FaUCI</strong> and <strong>Prejudice Removal</strong>—showed limited effectiveness, even when increasing regularization parameters such as <cite>lambda</cite> and <cite>eta</cite>.</p>
+<ul class="simple">
+<li><p>These methods <strong>did not significantly improve fairness metrics</strong> in our initial tests.</p></li>
+<li><p>A key issue was the <strong>lack of representative samples</strong> for combinations of sensitive groups and target classes.</p></li>
+<li><p>Without enough examples in underrepresented subgroups, these methods struggled to learn fair decision boundaries.</p></li>
+<li><p>We addressed this limitation by applying <strong>targeted data augmentation</strong>, which improved fairness results and highlighted the importance of <strong>balanced subgroup representation</strong>.</p></li>
+</ul>
+</section>
+<section id="effect-of-cross-validation">
+<h2>Effect of Cross-Validation<a class="headerlink" href="#effect-of-cross-validation" title="Link to this heading">¶</a></h2>
+<p>An unexpected observation was that fairness metrics were generally <strong>better when using a simple train/test split</strong> compared to k-fold cross-validation.</p>
+<ul class="simple">
+<li><p>This is due to the fact that <strong>standard cross-validation does not guarantee balanced representation of sensitive subgroups</strong> across folds.</p></li>
+<li><p>Some folds may contain very few or no examples from certain sensitive groups, causing instability in fairness metrics and poor generalization.</p></li>
+</ul>
+<p>To overcome this, we recommend using <strong>stratified cross-validation based on the sensitive attribute</strong>. This ensures each fold contains a proportional representation of all sensitive subgroups and allows for more <strong>reliable fairness evaluation</strong>.</p>
+</section>
+<section id="key-takeaways">
+<h2>Key Takeaways<a class="headerlink" href="#key-takeaways" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Adversarial Debiasing</strong> is the most effective in-processing mitigation strategy in this study.</p></li>
+<li><p><strong>Fairness performance is highly sensitive to subgroup representation</strong> in the dataset.</p></li>
+<li><p><strong>Data augmentation</strong> can help improve fairness when subgroup data is sparse.</p></li>
+<li><p>Always use <strong>stratified cross-validation over sensitive features</strong> for fairness-aware model evaluation.</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Fair-Candidate-Screening-System</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="main.html">Fair Candidate Screening System</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/training_testing.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -5,7 +5,5 @@ Welcome to Fair Candidate Screening System's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   data_cleaning
-   data_loading
-   training_testing
+   main
 
