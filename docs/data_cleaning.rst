@@ -1,26 +1,26 @@
 1. Data Cleaning (Selection)
 =============================
 
-In questa fase iniziale, il dataset grezzo viene sottoposto a un processo di selezione e pulizia al fine di ottenere una base coerente, priva di rumore e adatta alla fase di classificazione.
+In this initial phase, the raw dataset is subjected to a cleaning and selection process to ensure a consistent, noise-free foundation suitable for the classification phase.
 
-Obiettivo
+Objective
 ---------
 
-- Preparare un dataset utilizzabile per la fase di **classificazione**
-- Rimuovere dati inconsistenti, duplicati, o con troppi valori mancanti
-- Applicare filtri logici o statistici per escludere record non rilevanti
+- Prepare a dataset that can be used for **classification**
+- Remove inconsistent data, duplicates, or records with excessive missing values
+- Apply logical or statistical filters to exclude irrelevant entries
 
-Operazioni eseguite
--------------------
+Actions Performed
+-----------------
 
-- Rimozione dei record con più del **30% di valori mancanti**
-- Eliminazione di **feature irrilevanti** (es. ID, timestamp non usati, commenti testuali liberi)
-- Conversione di colonne categoriche in formato leggibile o codificato
-- Uniformazione dei tipi di dato (es. trasformazione di numeri float stringati in numerici)
+- Removed records with more than **30% missing values**
+- Eliminated **irrelevant features** (e.g., unused IDs, timestamps, free-text comments)
+- Converted categorical columns into readable or encoded formats
+- Standardized data types (e.g., converted string-formatted floats into numeric types)
 
-Esito
------
+Outcome
+-------
 
-Il dataset risultante è stato ridotto da **X** feature iniziali a **Y** feature selezionate, con un totale di **N** istanze (record), pronte per essere analizzate nella fase successiva.
+The resulting dataset was reduced from **X** initial features to **Y** selected features, with a total of **N** instances (records), ready for further analysis.
 
-Questo dataset è stato validato per assenza di duplicati, coerenza dei tipi di dato e sufficiente densità di informazione per procedere alla classificazione.
+The dataset was validated for absence of duplicates, consistency of data types, and sufficient information density to proceed with classification tasks.
