@@ -5,5 +5,5 @@ Welcome to Fair Candidate Screening System's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   In-Processing
+   in-processing
 
