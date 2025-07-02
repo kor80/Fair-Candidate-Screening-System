@@ -61,7 +61,7 @@ For this reason, we strongly recommend using **stratified cross-validation over 
 
 
 3.3 Analysis of In-processing Techniques
-========================================
+----------------------------------------
 
 This section focuses on the evaluation of in-processing mitigation strategies used during model training. The primary goal was to reduce bias while maintaining model performance.
 
