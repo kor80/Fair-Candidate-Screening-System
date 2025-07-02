@@ -7,5 +7,5 @@ Welcome to Fair Candidate Screening System's documentation!
 
    data_cleaning
    data_loading
-   in_processing
+   training_testing
 
