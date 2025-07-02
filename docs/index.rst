@@ -6,6 +6,6 @@ Welcome to Fair Candidate Screening System's documentation!
    :caption: Contents:
 
    data_cleaning
-   data_loading_and_understanding
+   data_loading
    in_processing
 
