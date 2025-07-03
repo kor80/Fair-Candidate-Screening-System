@@ -1129,15 +1129,6 @@ Domicile Region
 
 
 
-This last plot shows that there are no biases in the region, thus we can
-assume that there are no bias in the province feature too. Note that the
-regions of the south are not well represented, so any bias related to
-the north-south discrimination won’t be catched.
-
-A one-hot wencoding would be too heavy for too much regions, thus we can
-group them into south, central and north regions and then one-hot encode
-them.
-
 .. code:: ipython3
 
     region_groups = {
@@ -1189,7 +1180,7 @@ them.
 
 
 
-.. image:: main_files/main_67_0.png
+.. image:: main_files/main_65_0.png
 
 
 .. code:: ipython3
@@ -1388,7 +1379,7 @@ Since it is only one we can safely drop it.
 
 
 
-.. image:: main_files/main_76_0.png
+.. image:: main_files/main_74_0.png
 
 
 .. code:: ipython3
@@ -1404,7 +1395,7 @@ Since it is only one we can safely drop it.
 
 
 
-.. image:: main_files/main_77_0.png
+.. image:: main_files/main_75_0.png
 
 
 .. code:: ipython3
@@ -1519,7 +1510,7 @@ Candidate Education
 
 
 
-.. image:: main_files/main_86_0.png
+.. image:: main_files/main_84_0.png
 
 
 .. code:: ipython3
@@ -1536,7 +1527,7 @@ Candidate Education
 
 
 
-.. image:: main_files/main_87_0.png
+.. image:: main_files/main_85_0.png
 
 
 These results are probably not about any bias. However, we cannot say
@@ -1647,7 +1638,7 @@ Job Sector
 
 
 
-.. image:: main_files/main_99_0.png
+.. image:: main_files/main_97_0.png
 
 
 .. code:: ipython3
@@ -1673,7 +1664,7 @@ Job Sector
 
 
 
-.. image:: main_files/main_101_0.png
+.. image:: main_files/main_99_0.png
 
 
 .. code:: ipython3
@@ -1714,7 +1705,7 @@ Job Work Province
 
 
 
-.. image:: main_files/main_105_0.png
+.. image:: main_files/main_103_0.png
 
 
 .. code:: ipython3
@@ -1976,7 +1967,7 @@ Detecting bias on the dataset using Statistical Parity Difference
 
 
 
-.. image:: main_files/main_117_0.png
+.. image:: main_files/main_115_0.png
 
 
 .. code:: ipython3
@@ -2025,7 +2016,7 @@ Correlation Matrix
 
 
 
-.. image:: main_files/main_122_0.png
+.. image:: main_files/main_120_0.png
 
 
 Bias mitigation techniques
@@ -2379,7 +2370,7 @@ Fairness metrics
 
 
 
-.. image:: main_files/main_139_0.png
+.. image:: main_files/main_137_0.png
 
 
 Plot DPR and EOR
@@ -2416,19 +2407,19 @@ Plot DPR and EOR
 
 
 
-.. image:: main_files/main_142_0.png
+.. image:: main_files/main_140_0.png
 
 
 
-.. image:: main_files/main_142_1.png
+.. image:: main_files/main_140_1.png
 
 
 
-.. image:: main_files/main_142_2.png
+.. image:: main_files/main_140_2.png
 
 
 
-.. image:: main_files/main_142_3.png
+.. image:: main_files/main_140_3.png
 
 
 Performance metrics
@@ -2476,19 +2467,19 @@ Our chosen metrics: Accuracy, Precision, Recall, AUC
 
 
 
-.. image:: main_files/main_145_0.png
+.. image:: main_files/main_143_0.png
 
 
 
-.. image:: main_files/main_145_1.png
+.. image:: main_files/main_143_1.png
 
 
 
-.. image:: main_files/main_145_2.png
+.. image:: main_files/main_143_2.png
 
 
 
-.. image:: main_files/main_145_3.png
+.. image:: main_files/main_143_3.png
 
 
 Stratified K-fold cross-validation
@@ -2650,7 +2641,7 @@ significantly impact the results:
 
 
 
-.. image:: main_files/main_151_0.png
+.. image:: main_files/main_149_0.png
 
 
 .. code:: ipython3
@@ -2685,19 +2676,19 @@ significantly impact the results:
 
 
 
-.. image:: main_files/main_153_0.png
+.. image:: main_files/main_151_0.png
 
 
 
-.. image:: main_files/main_153_1.png
+.. image:: main_files/main_151_1.png
 
 
 
-.. image:: main_files/main_153_2.png
+.. image:: main_files/main_151_2.png
 
 
 
-.. image:: main_files/main_153_3.png
+.. image:: main_files/main_151_3.png
 
 
 We spot a really high variance. Why is that? Let’s inspect the
@@ -2793,19 +2784,19 @@ metrics for each fold.
 
 
 
-.. image:: main_files/main_159_0.png
+.. image:: main_files/main_157_0.png
 
 
 
-.. image:: main_files/main_159_1.png
+.. image:: main_files/main_157_1.png
 
 
 
-.. image:: main_files/main_159_2.png
+.. image:: main_files/main_157_2.png
 
 
 
-.. image:: main_files/main_159_3.png
+.. image:: main_files/main_157_3.png
 
 
 2) Splitting on “target + sensitive” feature
@@ -2831,7 +2822,7 @@ metrics for each fold.
 
 
 
-.. image:: main_files/main_163_0.png
+.. image:: main_files/main_161_0.png
 
 
 .. code:: ipython3
@@ -2866,19 +2857,19 @@ metrics for each fold.
 
 
 
-.. image:: main_files/main_165_0.png
+.. image:: main_files/main_163_0.png
 
 
 
-.. image:: main_files/main_165_1.png
+.. image:: main_files/main_163_1.png
 
 
 
-.. image:: main_files/main_165_2.png
+.. image:: main_files/main_163_2.png
 
 
 
-.. image:: main_files/main_165_3.png
+.. image:: main_files/main_163_3.png
 
 
 We can clearly see that the second protocol leads to better fairness
@@ -2930,19 +2921,19 @@ reliable and stable.
 
 
 
-.. image:: main_files/main_169_0.png
+.. image:: main_files/main_167_0.png
 
 
 
-.. image:: main_files/main_169_1.png
+.. image:: main_files/main_167_1.png
 
 
 
-.. image:: main_files/main_169_2.png
+.. image:: main_files/main_167_2.png
 
 
 
-.. image:: main_files/main_169_3.png
+.. image:: main_files/main_167_3.png
 
 
 Data rebalancing: checking the robustness of our pipeline
@@ -3050,7 +3041,7 @@ Fairness metrics
 
 
 
-.. image:: main_files/main_177_0.png
+.. image:: main_files/main_175_0.png
 
 
 .. code:: ipython3
@@ -3085,19 +3076,19 @@ Fairness metrics
 
 
 
-.. image:: main_files/main_179_0.png
+.. image:: main_files/main_177_0.png
 
 
 
-.. image:: main_files/main_179_1.png
+.. image:: main_files/main_177_1.png
 
 
 
-.. image:: main_files/main_179_2.png
+.. image:: main_files/main_177_2.png
 
 
 
-.. image:: main_files/main_179_3.png
+.. image:: main_files/main_177_3.png
 
 
 Performance metrics
@@ -3143,19 +3134,19 @@ Performance metrics
 
 
 
-.. image:: main_files/main_182_0.png
+.. image:: main_files/main_180_0.png
 
 
 
-.. image:: main_files/main_182_1.png
+.. image:: main_files/main_180_1.png
 
 
 
-.. image:: main_files/main_182_2.png
+.. image:: main_files/main_180_2.png
 
 
 
-.. image:: main_files/main_182_3.png
+.. image:: main_files/main_180_3.png
 
 
 Considerations
@@ -3670,7 +3661,7 @@ With different adversary weights
 
 
 
-.. image:: main_files/main_202_0.png
+.. image:: main_files/main_200_0.png
 
 
 .. code:: ipython3
@@ -3709,11 +3700,11 @@ With different adversary weights
     
 
 
-.. image:: main_files/main_203_1.png
+.. image:: main_files/main_201_1.png
 
 
 
-.. image:: main_files/main_203_2.png
+.. image:: main_files/main_201_2.png
 
 
 .. parsed-literal::
@@ -3722,11 +3713,11 @@ With different adversary weights
     
 
 
-.. image:: main_files/main_203_4.png
+.. image:: main_files/main_201_4.png
 
 
 
-.. image:: main_files/main_203_5.png
+.. image:: main_files/main_201_5.png
 
 
 .. parsed-literal::
@@ -3735,12 +3726,16 @@ With different adversary weights
     
 
 
-.. image:: main_files/main_203_7.png
+.. image:: main_files/main_201_7.png
 
 
 
-.. image:: main_files/main_203_8.png
+.. image:: main_files/main_201_8.png
 
+
+Adversarial Debiasing demonstrated a notably positive impact on fairness
+metrics, with substantial improvements in both Equalized Odds Ratio
+(EOR) and—most significantly—Demographic Parity Ratio (DPR).
 
 .. code:: ipython3
 
@@ -3773,7 +3768,7 @@ With different adversary weights
 
 
 
-.. image:: main_files/main_204_0.png
+.. image:: main_files/main_203_0.png
 
 
 .. code:: ipython3
@@ -3800,8 +3795,11 @@ With different adversary weights
 
 
 
-.. image:: main_files/main_205_0.png
+.. image:: main_files/main_204_0.png
 
+
+Here we can see that the bigger weight lambda give the better result in
+terms of fairness
 
 2) FaUCI
 ^^^^^^^^
@@ -4047,6 +4045,22 @@ With different adversary weights
 .. image:: main_files/main_210_11.png
 
 
+In contrast to Adversarial Debiasing, the FaUCI (Fair Uncertainty-aware
+Classification Index) method did not yield substantial improvements in
+fairness metrics.
+
+In particular, when increasing the fairness regularization parameter λ,
+we observed a destabilization of the Equalized Odds Ratio (EOR)—often
+resulting in explosive or erratic values. This suggests that the model,
+under strong regularization pressure, struggles to maintain balanced
+error rates across sensitive groups.
+
+At the same time, while Demographic Parity Ratio (DPR) tends to decrease
+slightly under high λ values (indicating some fairness enforcement),
+this comes at the cost of a significant drop in recall. The model
+becomes more conservative and tends to under-predict the positive class,
+especially for minority groups.
+
 .. code:: ipython3
 
     fauci_lambdas = [w for w in reg_weights if w != 0.0]
@@ -4080,7 +4094,7 @@ With different adversary weights
 
 
 
-.. image:: main_files/main_211_0.png
+.. image:: main_files/main_212_0.png
 
 
 .. code:: ipython3
@@ -4110,7 +4124,7 @@ With different adversary weights
 
 
 
-.. image:: main_files/main_212_0.png
+.. image:: main_files/main_213_0.png
 
 
 3) Prejudice Remover
@@ -4276,7 +4290,7 @@ With different adversary weights
 
 
 
-.. image:: main_files/main_216_0.png
+.. image:: main_files/main_217_0.png
 
 
 .. code:: ipython3
@@ -4316,11 +4330,11 @@ With different adversary weights
     
 
 
-.. image:: main_files/main_217_1.png
+.. image:: main_files/main_218_1.png
 
 
 
-.. image:: main_files/main_217_2.png
+.. image:: main_files/main_218_2.png
 
 
 .. parsed-literal::
@@ -4329,11 +4343,11 @@ With different adversary weights
     
 
 
-.. image:: main_files/main_217_4.png
+.. image:: main_files/main_218_4.png
 
 
 
-.. image:: main_files/main_217_5.png
+.. image:: main_files/main_218_5.png
 
 
 .. parsed-literal::
@@ -4342,11 +4356,11 @@ With different adversary weights
     
 
 
-.. image:: main_files/main_217_7.png
+.. image:: main_files/main_218_7.png
 
 
 
-.. image:: main_files/main_217_8.png
+.. image:: main_files/main_218_8.png
 
 
 .. parsed-literal::
@@ -4355,12 +4369,30 @@ With different adversary weights
     
 
 
-.. image:: main_files/main_217_10.png
+.. image:: main_files/main_218_10.png
 
 
 
-.. image:: main_files/main_217_11.png
+.. image:: main_files/main_218_11.png
 
+
+While the Demographic Parity Ratio (DPR) slightly decreases compared to
+the baseline, the improvement is marginal and accompanied by increased
+variance, indicating inconsistent fairness behavior across folds.
+
+Notably, the Equalized Odds Ratio (EOR) remains very low in both models
+and exhibits high variability with the Prejudice Remover, suggesting
+instability in controlling error-rate parity.
+
+Additional experiments with higher η values showed diminishing returns:
+rather than further improving fairness, higher regularization introduced
+performance degradation without significant gains in DPR or EOR.
+
+These results suggest that Prejudice Remover is sensitive to η tuning,
+and beyond a certain threshold, increasing regularization may
+overconstrain the model—leading to worse generalization and unstable
+fairness outcomes. This behavior is especially problematic when the
+dataset lacks balanced representation across sensitive groups.
 
 .. code:: ipython3
 
@@ -4395,7 +4427,7 @@ With different adversary weights
 
 
 
-.. image:: main_files/main_218_0.png
+.. image:: main_files/main_220_0.png
 
 
 .. code:: ipython3
@@ -4425,7 +4457,7 @@ With different adversary weights
 
 
 
-.. image:: main_files/main_219_0.png
+.. image:: main_files/main_221_0.png
 
 
 Results using different stratification
@@ -4731,11 +4763,11 @@ Adversarial Debiasing
     
 
 
-.. image:: main_files/main_225_1.png
+.. image:: main_files/main_227_1.png
 
 
 
-.. image:: main_files/main_225_2.png
+.. image:: main_files/main_227_2.png
 
 
 .. parsed-literal::
@@ -4744,11 +4776,11 @@ Adversarial Debiasing
     
 
 
-.. image:: main_files/main_225_4.png
+.. image:: main_files/main_227_4.png
 
 
 
-.. image:: main_files/main_225_5.png
+.. image:: main_files/main_227_5.png
 
 
 .. parsed-literal::
@@ -4757,11 +4789,11 @@ Adversarial Debiasing
     
 
 
-.. image:: main_files/main_225_7.png
+.. image:: main_files/main_227_7.png
 
 
 
-.. image:: main_files/main_225_8.png
+.. image:: main_files/main_227_8.png
 
 
 FaUCI
@@ -4987,11 +5019,11 @@ FaUCI
     
 
 
-.. image:: main_files/main_229_1.png
+.. image:: main_files/main_231_1.png
 
 
 
-.. image:: main_files/main_229_2.png
+.. image:: main_files/main_231_2.png
 
 
 .. parsed-literal::
@@ -5000,11 +5032,11 @@ FaUCI
     
 
 
-.. image:: main_files/main_229_4.png
+.. image:: main_files/main_231_4.png
 
 
 
-.. image:: main_files/main_229_5.png
+.. image:: main_files/main_231_5.png
 
 
 .. parsed-literal::
@@ -5013,11 +5045,11 @@ FaUCI
     
 
 
-.. image:: main_files/main_229_7.png
+.. image:: main_files/main_231_7.png
 
 
 
-.. image:: main_files/main_229_8.png
+.. image:: main_files/main_231_8.png
 
 
 .. parsed-literal::
@@ -5026,11 +5058,11 @@ FaUCI
     
 
 
-.. image:: main_files/main_229_10.png
+.. image:: main_files/main_231_10.png
 
 
 
-.. image:: main_files/main_229_11.png
+.. image:: main_files/main_231_11.png
 
 
 Prejudice Remover
@@ -5261,11 +5293,11 @@ Prejudice Remover
     
 
 
-.. image:: main_files/main_233_1.png
+.. image:: main_files/main_235_1.png
 
 
 
-.. image:: main_files/main_233_2.png
+.. image:: main_files/main_235_2.png
 
 
 .. parsed-literal::
@@ -5274,11 +5306,11 @@ Prejudice Remover
     
 
 
-.. image:: main_files/main_233_4.png
+.. image:: main_files/main_235_4.png
 
 
 
-.. image:: main_files/main_233_5.png
+.. image:: main_files/main_235_5.png
 
 
 .. parsed-literal::
@@ -5287,11 +5319,11 @@ Prejudice Remover
     
 
 
-.. image:: main_files/main_233_7.png
+.. image:: main_files/main_235_7.png
 
 
 
-.. image:: main_files/main_233_8.png
+.. image:: main_files/main_235_8.png
 
 
 .. parsed-literal::
@@ -5300,12 +5332,24 @@ Prejudice Remover
     
 
 
-.. image:: main_files/main_233_10.png
+.. image:: main_files/main_235_10.png
 
 
 
-.. image:: main_files/main_233_11.png
+.. image:: main_files/main_235_11.png
 
+
+The stratification was applied on the joint distribution of the target
+and sensitive feature, rather than explicitly balancing sensitive groups
+alone. This resulted in folds where minority sensitive groups were
+underrepresented or missing entirely, severely compromising both the
+training signal for fairness-aware algorithms and the reliability of
+fairness evaluation.
+
+In contrast, when we stratified directly on the sensitive feature, each
+fold retained a more balanced representation of all groups, which
+significantly improved the performance of fairness-aware techniques for
+all methods
 
 Results without using Cross-validation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -5488,11 +5532,11 @@ Adversarial Debiasing
 
 
 
-.. image:: main_files/main_240_0.png
+.. image:: main_files/main_243_0.png
 
 
 
-.. image:: main_files/main_240_1.png
+.. image:: main_files/main_243_1.png
 
 
 FaUCI
@@ -5640,11 +5684,11 @@ FaUCI
     
 
 
-.. image:: main_files/main_244_1.png
+.. image:: main_files/main_247_1.png
 
 
 
-.. image:: main_files/main_244_2.png
+.. image:: main_files/main_247_2.png
 
 
 .. parsed-literal::
@@ -5654,11 +5698,11 @@ FaUCI
     
 
 
-.. image:: main_files/main_244_4.png
+.. image:: main_files/main_247_4.png
 
 
 
-.. image:: main_files/main_244_5.png
+.. image:: main_files/main_247_5.png
 
 
 .. parsed-literal::
@@ -5668,11 +5712,11 @@ FaUCI
     
 
 
-.. image:: main_files/main_244_7.png
+.. image:: main_files/main_247_7.png
 
 
 
-.. image:: main_files/main_244_8.png
+.. image:: main_files/main_247_8.png
 
 
 .. parsed-literal::
@@ -5682,11 +5726,11 @@ FaUCI
     
 
 
-.. image:: main_files/main_244_10.png
+.. image:: main_files/main_247_10.png
 
 
 
-.. image:: main_files/main_244_11.png
+.. image:: main_files/main_247_11.png
 
 
 Prejudice Removal
@@ -5823,11 +5867,11 @@ Prejudice Removal
     
 
 
-.. image:: main_files/main_248_1.png
+.. image:: main_files/main_251_1.png
 
 
 
-.. image:: main_files/main_248_2.png
+.. image:: main_files/main_251_2.png
 
 
 .. parsed-literal::
@@ -5836,11 +5880,11 @@ Prejudice Removal
     
 
 
-.. image:: main_files/main_248_4.png
+.. image:: main_files/main_251_4.png
 
 
 
-.. image:: main_files/main_248_5.png
+.. image:: main_files/main_251_5.png
 
 
 .. parsed-literal::
@@ -5849,11 +5893,11 @@ Prejudice Removal
     
 
 
-.. image:: main_files/main_248_7.png
+.. image:: main_files/main_251_7.png
 
 
 
-.. image:: main_files/main_248_8.png
+.. image:: main_files/main_251_8.png
 
 
 .. parsed-literal::
@@ -5862,11 +5906,11 @@ Prejudice Removal
     
 
 
-.. image:: main_files/main_248_10.png
+.. image:: main_files/main_251_10.png
 
 
 
-.. image:: main_files/main_248_11.png
+.. image:: main_files/main_251_11.png
 
 
 Results duplicating positive samples
@@ -6054,11 +6098,11 @@ FaUCI
     
 
 
-.. image:: main_files/main_254_1.png
+.. image:: main_files/main_257_1.png
 
 
 
-.. image:: main_files/main_254_2.png
+.. image:: main_files/main_257_2.png
 
 
 .. parsed-literal::
@@ -6067,11 +6111,11 @@ FaUCI
     
 
 
-.. image:: main_files/main_254_4.png
+.. image:: main_files/main_257_4.png
 
 
 
-.. image:: main_files/main_254_5.png
+.. image:: main_files/main_257_5.png
 
 
 .. parsed-literal::
@@ -6080,11 +6124,11 @@ FaUCI
     
 
 
-.. image:: main_files/main_254_7.png
+.. image:: main_files/main_257_7.png
 
 
 
-.. image:: main_files/main_254_8.png
+.. image:: main_files/main_257_8.png
 
 
 .. parsed-literal::
@@ -6093,11 +6137,11 @@ FaUCI
     
 
 
-.. image:: main_files/main_254_10.png
+.. image:: main_files/main_257_10.png
 
 
 
-.. image:: main_files/main_254_11.png
+.. image:: main_files/main_257_11.png
 
 
 Prejudice Removal
@@ -6278,11 +6322,11 @@ Prejudice Removal
     
 
 
-.. image:: main_files/main_258_1.png
+.. image:: main_files/main_261_1.png
 
 
 
-.. image:: main_files/main_258_2.png
+.. image:: main_files/main_261_2.png
 
 
 .. parsed-literal::
@@ -6291,11 +6335,11 @@ Prejudice Removal
     
 
 
-.. image:: main_files/main_258_4.png
+.. image:: main_files/main_261_4.png
 
 
 
-.. image:: main_files/main_258_5.png
+.. image:: main_files/main_261_5.png
 
 
 .. parsed-literal::
@@ -6304,11 +6348,11 @@ Prejudice Removal
     
 
 
-.. image:: main_files/main_258_7.png
+.. image:: main_files/main_261_7.png
 
 
 
-.. image:: main_files/main_258_8.png
+.. image:: main_files/main_261_8.png
 
 
 .. parsed-literal::
@@ -6317,14 +6361,48 @@ Prejudice Removal
     
 
 
-.. image:: main_files/main_258_10.png
+.. image:: main_files/main_261_10.png
 
 
 
-.. image:: main_files/main_258_11.png
+.. image:: main_files/main_261_11.png
 
 
-The result for fairness metrics show a significant improvement
+The result for fairness metrics show a slight improvement
+
+Among these, Adversarial Debiasing consistently achieved the best
+trade-off between fairness and accuracy. It works by introducing an
+adversarial component that learns to predict the sensitive attribute,
+while the main model is trained to minimize its predictive power. This
+leads to internal representations that are less biased and more
+equitable across groups.
+
+A key strength of Adversarial Debiasing is its ability to generalize
+fairness constraints, even in the presence of limited data from minority
+sensitive groups. Unlike other techniques that rely heavily on
+subgroup-specific examples, the adversarial setup enforces global
+invariance to the sensitive attribute across the entire representation
+space. As a result, it can still learn fair representations even when
+some subgroups are underrepresented, which explains its robust
+improvement in fairness metrics despite data imbalance. Because this
+constraint operates at the level of feature representations, and not
+directly on group statistics, it’s less sensitive to data imbalance.
+Even if there are fewer minority samples, the model still gets a signal
+from the adversary about whether sensitive info is leaking — and it
+adjusts accordingly.
+
+In contrast, FaUCI and Prejudice Removal showed limited improvement in
+fairness, even when tuning regularization strengths (lambda, eta). The
+main bottleneck was the lack of sufficient examples from minority
+sensitive groups, which prevented the algorithms from learning
+generalizable fairness constraints. Just doubling the positive examples
+partially mitigated this issue, improving fairness outcomes for
+underrepresented subgroups.
+
+Furthermore, we observed that fairness metrics degraded when using
+standard k-fold cross-validation, due to the absence of stratification
+over sensitive attributes. Some folds lacked representation for certain
+groups, making fairness evaluation unreliable.
 
 Post-Processing
 ~~~~~~~~~~~~~~~
@@ -6515,6 +6593,11 @@ the protocol itself when we split in training and test.
     postproc_baseline_fairness_metrics = []
     eq_odds_fairness_metrics = []
     calib_eq_odds_fairness_metrics = []
+    
+    postproc_baseline_performance_metrics = []
+    eq_odds_performance_metrics = []
+    calib_eq_odds_performance_metrics = []
+    
     spds = []
     
     X = fl.DataFrame(postproc_df.drop(target, axis=1).copy())
@@ -6537,6 +6620,7 @@ the protocol itself when we split in training and test.
     df_test[target] = y_test
     
     postproc_baseline_fairness_metrics.append(compute_fairness_metrics(y_test, y_pred_test, df_test[sensitive_feature]))
+    postproc_baseline_performance_metrics.append(compute_performance_metrics(y_test, y_pred_test, y_scores_test))
     
     calib_eq_odds = calib_eq_odds.fit(df_train, y_scores_train)
     transformed_pred = calib_eq_odds.predict(df_test, y_scores_test)
@@ -6550,6 +6634,9 @@ the protocol itself when we split in training and test.
     
     calib_eq_odds_fairness_metrics.append(compute_fairness_metrics(y_test, transformed_pred, df_test[sensitive_feature]))
     eq_odds_fairness_metrics.append(compute_fairness_metrics(y_test, transformed_eq_pred, df_test[sensitive_feature]))
+    
+    calib_eq_odds_performance_metrics.append(compute_performance_metrics(y_test, transformed_pred, np.ones(len(transformed_pred))))
+    eq_odds_performance_metrics.append(compute_performance_metrics(y_test, transformed_eq_pred, np.ones(len(transformed_pred))))
 
 .. code:: ipython3
 
@@ -6569,11 +6656,36 @@ the protocol itself when we split in training and test.
 
 
 
-.. image:: main_files/main_270_0.png
+.. image:: main_files/main_274_0.png
 
 
 
-.. image:: main_files/main_270_1.png
+.. image:: main_files/main_274_1.png
+
+
+.. code:: ipython3
+
+    metrics_bar_plot(postproc_baseline_performance_metrics, 
+                     calib_eq_odds_performance_metrics, 
+                     label1='w/o post-processing', 
+                     label2='with post-processing',
+                     metrics=['accuracy','precision', 'recall', 'auc'],
+                     title="Baseline vs Calibrated Equalized Odds Performances")
+    
+    metrics_bar_plot(postproc_baseline_performance_metrics, 
+                     eq_odds_performance_metrics, 
+                     label1='w/o post-processing', 
+                     label2='with post-processing',
+                     metrics=['accuracy','precision', 'recall', 'auc'],
+                     title="Baseline vs Equalized Odds Performances")
+
+
+
+.. image:: main_files/main_275_0.png
+
+
+
+.. image:: main_files/main_275_1.png
 
 
 .. code:: ipython3
@@ -6596,7 +6708,7 @@ the protocol itself when we split in training and test.
 
 
 
-.. image:: main_files/main_271_0.png
+.. image:: main_files/main_276_0.png
 
 
 Because the protected slice has only two positive cases, hard-threshold
@@ -6641,6 +6753,11 @@ sensitive-group) combination.
     eq_odds_fairness_metrics = []
     calib_eq_odds_fairness_metrics = []
     
+    postproc_baseline_performance_metrics = []
+    eq_odds_performance_metrics = []
+    calib_eq_odds_performance_metrics = []
+    
+    
     for fold, (train_idx, test_idx) in enumerate(kf.split(postproc_df, postproc_df[target].astype(str)+postproc_df[sensitive_feature].astype(str))):
         train_df = postproc_df.iloc[train_idx].copy()
         test_df = postproc_df.iloc[test_idx].copy()
@@ -6655,6 +6772,7 @@ sensitive-group) combination.
         y_test_pred = (test_scores > 0.5).astype(int)
         postproc_baseline_fairness_metrics.append(
             compute_fairness_metrics(test_df[target], y_test_pred, test_df[sensitive_feature]))
+        postproc_baseline_performance_metrics.append(compute_performance_metrics(test_df[target], y_test_pred, test_scores))
     
         calib_eq_odds = aif360_PostProcessing_Wrapper(PostProcessingAlgorithms.CALIBRATED_EQ_ODDS, 
                                                     unprivileged_groups=unprivileged_groups, 
@@ -6675,6 +6793,9 @@ sensitive-group) combination.
     
         calib_eq_odds_fairness_metrics.append( compute_fairness_metrics(test_df[target], calib_eq_odds_trans_pred, test_df[sensitive_feature]))
         eq_odds_fairness_metrics.append( compute_fairness_metrics(test_df[target], eq_odds_trans_pred, test_df[sensitive_feature]))
+    
+        calib_eq_odds_performance_metrics.append(compute_performance_metrics(test_df[target], calib_eq_odds_trans_pred, np.ones(len(calib_eq_odds_trans_pred))))
+        eq_odds_performance_metrics.append(compute_performance_metrics(test_df[target], eq_odds_trans_pred, np.ones(len(eq_odds_trans_pred))))
 
 
 .. parsed-literal::
@@ -6701,11 +6822,36 @@ sensitive-group) combination.
 
 
 
-.. image:: main_files/main_276_0.png
+.. image:: main_files/main_281_0.png
 
 
 
-.. image:: main_files/main_276_1.png
+.. image:: main_files/main_281_1.png
+
+
+.. code:: ipython3
+
+    metrics_bar_plot(postproc_baseline_performance_metrics, 
+                     calib_eq_odds_performance_metrics, 
+                     label1='w/o post-processing', 
+                     label2='with post-processing',
+                     metrics=['accuracy','precision', 'recall', 'auc'],
+                     title="Baseline vs Calibrated Equalized Odds Performances")
+    
+    metrics_bar_plot(postproc_baseline_performance_metrics, 
+                     eq_odds_performance_metrics, 
+                     label1='w/o post-processing', 
+                     label2='with post-processing',
+                     metrics=['accuracy','precision', 'recall', 'auc'],
+                     title="Baseline vs Equalized Odds Performances")
+
+
+
+.. image:: main_files/main_282_0.png
+
+
+
+.. image:: main_files/main_282_1.png
 
 
 For the same reason of before, the eq_dots produces the same results as
@@ -6782,6 +6928,10 @@ feature:
     eq_odds_fairness_metrics = []
     calib_eq_odds_fairness_metrics = []
     
+    postproc_baseline_performance_metrics = []
+    eq_odds_performance_metrics = []
+    calib_eq_odds_performance_metrics = []
+    
     for fold, (train_idx, test_idx) in enumerate(kf.split(postproc_df, postproc_df[target].astype(str)+postproc_df[sensitive_feature].astype(str))):
         train_df = postproc_df.iloc[train_idx].copy()
         test_df = postproc_df.iloc[test_idx].copy()
@@ -6795,6 +6945,7 @@ feature:
         y_test_pred = (test_scores > 0.5).astype(int)
         postproc_baseline_fairness_metrics.append(
             compute_fairness_metrics(test_df[target], y_test_pred, test_df[sensitive_feature]))
+        postproc_baseline_performance_metrics.append(compute_performance_metrics(test_df[target], y_test_pred, test_scores))
     
         calib_eq_odds = aif360_PostProcessing_Wrapper(PostProcessingAlgorithms.CALIBRATED_EQ_ODDS, 
                                                     unprivileged_groups=unprivileged_groups, 
@@ -6815,6 +6966,9 @@ feature:
     
         calib_eq_odds_fairness_metrics.append( compute_fairness_metrics(test_df[target], calib_eq_odds_trans_pred, test_df[sensitive_feature]))
         eq_odds_fairness_metrics.append( compute_fairness_metrics(test_df[target], eq_odds_trans_pred, test_df[sensitive_feature]))
+    
+        calib_eq_odds_performance_metrics.append(compute_performance_metrics(test_df[target], calib_eq_odds_trans_pred, np.ones(len(calib_eq_odds_trans_pred))))
+        eq_odds_performance_metrics.append(compute_performance_metrics(test_df[target], eq_odds_trans_pred, np.ones(len(eq_odds_trans_pred))))
 
 .. code:: ipython3
 
@@ -6834,11 +6988,36 @@ feature:
 
 
 
-.. image:: main_files/main_283_0.png
+.. image:: main_files/main_289_0.png
 
 
 
-.. image:: main_files/main_283_1.png
+.. image:: main_files/main_289_1.png
+
+
+.. code:: ipython3
+
+    metrics_bar_plot(postproc_baseline_performance_metrics, 
+                     calib_eq_odds_performance_metrics, 
+                     label1='w/o post-processing', 
+                     label2='with post-processing',
+                     metrics=['accuracy','precision', 'recall', 'auc'],
+                     title="Baseline vs Calibrated Equalized Odds Performances")
+    
+    metrics_bar_plot(postproc_baseline_performance_metrics, 
+                     eq_odds_performance_metrics, 
+                     label1='w/o post-processing', 
+                     label2='with post-processing',
+                     metrics=['accuracy','precision', 'recall', 'auc'],
+                     title="Baseline vs Equalized Odds Performances")
+
+
+
+.. image:: main_files/main_290_0.png
+
+
+
+.. image:: main_files/main_290_1.png
 
 
 We can observe that the Calibrated Equalized Odds further improves the

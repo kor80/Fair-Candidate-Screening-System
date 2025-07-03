@@ -1,42 +1,301 @@
+
 <!DOCTYPE html>
 
-<html lang="en" data-content_root="./">
+
+<html lang="en" data-content_root="./" >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Fair Candidate Screening System &#8212; Fair-Candidate-Screening-System 0.1 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
-    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
     <script src="_static/documentation_options.js?v=2709fde1"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'main';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Welcome to Fair Candidate Screening System’s documentation!" href="index.html" />
-   
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
   
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
   
   
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-  </head><body>
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
   
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Fair-Candidate-Screening-System 0.1 documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Fair Candidate Screening System
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
           
 
-          <div class="body" role="main">
-            
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Fair Candidate Screening System
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"></div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Fair Candidate Screening System</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
   <section id="fair-candidate-screening-system">
-<h1>Fair Candidate Screening System<a class="headerlink" href="#fair-candidate-screening-system" title="Link to this heading">¶</a></h1>
+<h1>Fair Candidate Screening System<a class="headerlink" href="#fair-candidate-screening-system" title="Link to this heading">#</a></h1>
 <section id="setup">
-<h2>Setup<a class="headerlink" href="#setup" title="Link to this heading">¶</a></h2>
+<h2>Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h2>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="ch">#!git clone https://github.com/pikalab-unibo-students/master-thesis-dizio-ay2324.git</span>
 </pre></div>
 </div>
@@ -80,7 +339,7 @@
 </div>
 </section>
 <section id="dataset-loading">
-<h2>Dataset Loading<a class="headerlink" href="#dataset-loading" title="Link to this heading">¶</a></h2>
+<h2>Dataset Loading<a class="headerlink" href="#dataset-loading" title="Link to this heading">#</a></h2>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset_path</span> <span class="o">=</span> <span class="s1">&#39;direct_matching_20240213.csv&#39;</span>
 </pre></div>
 </div>
@@ -94,7 +353,7 @@
 </div>
 </section>
 <section id="data-preparation">
-<h2>Data Preparation<a class="headerlink" href="#data-preparation" title="Link to this heading">¶</a></h2>
+<h2>Data Preparation<a class="headerlink" href="#data-preparation" title="Link to this heading">#</a></h2>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -506,7 +765,7 @@ the label, so we can drop them.</p>
 </table>
 </div></section>
 <section id="data-preprocessing">
-<h2>Data Preprocessing<a class="headerlink" href="#data-preprocessing" title="Link to this heading">¶</a></h2>
+<h2>Data Preprocessing<a class="headerlink" href="#data-preprocessing" title="Link to this heading">#</a></h2>
 <p>Before continuing with the data analysis we want to ensure that missing
 values are handled correctly and the data are ready to be feed in a
 classifier. Let’s inspect some of their statistics.</p>
@@ -747,7 +1006,7 @@ containing missing values are too much.</p>
 for the categorical ones in order to feed a classifier. In the next
 paragraphs we will focus on the features that require our attention.</p>
 <section id="ids">
-<h3>IDs<a class="headerlink" href="#ids" title="Link to this heading">¶</a></h3>
+<h3>IDs<a class="headerlink" href="#ids" title="Link to this heading">#</a></h3>
 <p>Candidate id and job id are meaningless for the task of bias detection,
 hence we can easily drop them.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;cand_id&#39;</span><span class="p">,</span><span class="s1">&#39;job_id&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -755,7 +1014,7 @@ hence we can easily drop them.</p>
 </div>
 </section>
 <section id="distance-km">
-<h3>Distance Km<a class="headerlink" href="#distance-km" title="Link to this heading">¶</a></h3>
+<h3>Distance Km<a class="headerlink" href="#distance-km" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;distance_km&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -816,7 +1075,7 @@ hence we can easily drop them.</p>
 candidate.</p>
 </section>
 <section id="candidate-gender">
-<h3>Candidate Gender<a class="headerlink" href="#candidate-gender" title="Link to this heading">¶</a></h3>
+<h3>Candidate Gender<a class="headerlink" href="#candidate-gender" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Visualize the distribution</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;cand_gender&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
@@ -860,7 +1119,7 @@ sectors</p>
 </div>
 </section>
 <section id="candidate-province">
-<h3>Candidate Province<a class="headerlink" href="#candidate-province" title="Link to this heading">¶</a></h3>
+<h3>Candidate Province<a class="headerlink" href="#candidate-province" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;cand_domicile_province&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -906,7 +1165,7 @@ will use the same encoder for both of them.</p>
 </div>
 </section>
 <section id="domicile-region">
-<h3>Domicile Region<a class="headerlink" href="#domicile-region" title="Link to this heading">¶</a></h3>
+<h3>Domicile Region<a class="headerlink" href="#domicile-region" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;cand_domicile_region&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -986,13 +1245,6 @@ will use the same encoder for both of them.</p>
 <span class="n">Name</span><span class="p">:</span> <span class="n">count</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
 </pre></div>
 </div>
-<p>This last plot shows that there are no biases in the region, thus we can
-assume that there are no bias in the province feature too. Note that the
-regions of the south are not well represented, so any bias related to
-the north-south discrimination won’t be catched.</p>
-<p>A one-hot wencoding would be too heavy for too much regions, thus we can
-group them into south, central and north regions and then one-hot encode
-them.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">region_groups</span> <span class="o">=</span> <span class="p">{</span>
     <span class="c1"># North</span>
     <span class="s1">&#39;piemonte&#39;</span><span class="p">:</span> <span class="s1">&#39;north&#39;</span><span class="p">,</span>
@@ -1039,7 +1291,7 @@ them.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_67_0.png" src="_images/main_67_0.png" />
+<img alt="_images/main_65_0.png" src="_images/main_65_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;cand_domicile_region&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">df1</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;cand_gender&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
@@ -1160,7 +1412,7 @@ them.</p>
 </div>
 </section>
 <section id="age-buckets">
-<h3>Age Buckets<a class="headerlink" href="#age-buckets" title="Link to this heading">¶</a></h3>
+<h3>Age Buckets<a class="headerlink" href="#age-buckets" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;cand_age_bucket&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1196,7 +1448,7 @@ them.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_76_0.png" src="_images/main_76_0.png" />
+<img alt="_images/main_74_0.png" src="_images/main_74_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df1</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;cand_age_bucket&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;hired&#39;</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;15-24&#39;</span><span class="p">,</span> <span class="s1">&#39;25-34&#39;</span><span class="p">,</span> <span class="s1">&#39;35-44&#39;</span><span class="p">,</span> <span class="s1">&#39;45-54&#39;</span><span class="p">,</span> <span class="s1">&#39;55-74&#39;</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Hirings Distribution over Candidate Age&#39;</span><span class="p">)</span>
@@ -1207,7 +1459,7 @@ them.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_77_0.png" src="_images/main_77_0.png" />
+<img alt="_images/main_75_0.png" src="_images/main_75_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sensitive_features</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;cand_age_bucket&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1238,7 +1490,7 @@ thus we will use progressive enumeration.</p>
 </div>
 </section>
 <section id="candidate-education">
-<h3>Candidate Education<a class="headerlink" href="#candidate-education" title="Link to this heading">¶</a></h3>
+<h3>Candidate Education<a class="headerlink" href="#candidate-education" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">map_education_level</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">isna</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
         <span class="k">return</span> <span class="s1">&#39;Unknown&#39;</span>
@@ -1297,7 +1549,7 @@ thus we will use progressive enumeration.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_86_0.png" src="_images/main_86_0.png" />
+<img alt="_images/main_84_0.png" src="_images/main_84_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df1</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;cand_education&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;hired&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Hirings Distribution over Education&#39;</span><span class="p">)</span>
@@ -1309,7 +1561,7 @@ thus we will use progressive enumeration.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_87_0.png" src="_images/main_87_0.png" />
+<img alt="_images/main_85_0.png" src="_images/main_85_0.png" />
 <p>These results are probably not about any bias. However, we cannot say
 much looking only at this feature.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">education_encoder</span> <span class="o">=</span> <span class="n">OrdinalEncoder</span><span class="p">()</span>
@@ -1318,7 +1570,7 @@ much looking only at this feature.</p>
 </div>
 </section>
 <section id="job-contract-type">
-<h3>Job Contract Type<a class="headerlink" href="#job-contract-type" title="Link to this heading">¶</a></h3>
+<h3>Job Contract Type<a class="headerlink" href="#job-contract-type" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;job_contract_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1345,7 +1597,7 @@ much looking only at this feature.</p>
 </div>
 </section>
 <section id="job-category">
-<h3>Job Category<a class="headerlink" href="#job-category" title="Link to this heading">¶</a></h3>
+<h3>Job Category<a class="headerlink" href="#job-category" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;job_professional_category&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1362,7 +1614,7 @@ much looking only at this feature.</p>
 </div>
 </section>
 <section id="job-sector">
-<h3>Job Sector<a class="headerlink" href="#job-sector" title="Link to this heading">¶</a></h3>
+<h3>Job Sector<a class="headerlink" href="#job-sector" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;job_sector&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1383,7 +1635,7 @@ much looking only at this feature.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_99_0.png" src="_images/main_99_0.png" />
+<img alt="_images/main_97_0.png" src="_images/main_97_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">counts</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;job_sector&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">min_count</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1">#Statistically meaningful</span>
 
@@ -1403,14 +1655,14 @@ much looking only at this feature.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_101_0.png" src="_images/main_101_0.png" />
+<img alt="_images/main_99_0.png" src="_images/main_99_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sector_encoder</span> <span class="o">=</span> <span class="n">OrdinalEncoder</span><span class="p">()</span>
 <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;job_sector&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sector_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df1</span><span class="p">[[</span><span class="s1">&#39;job_sector&#39;</span><span class="p">]])</span>
 </pre></div>
 </div>
 </section>
 <section id="job-work-province">
-<h3>Job Work Province<a class="headerlink" href="#job-work-province" title="Link to this heading">¶</a></h3>
+<h3>Job Work Province<a class="headerlink" href="#job-work-province" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;job_work_province&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1431,13 +1683,13 @@ much looking only at this feature.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_105_0.png" src="_images/main_105_0.png" />
+<img alt="_images/main_103_0.png" src="_images/main_103_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;job_work_province&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">province_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df1</span><span class="p">[[</span><span class="s1">&#39;job_work_province&#39;</span><span class="p">]])</span>
 </pre></div>
 </div>
 </section>
 <section id="considerations">
-<h3>Considerations<a class="headerlink" href="#considerations" title="Link to this heading">¶</a></h3>
+<h3>Considerations<a class="headerlink" href="#considerations" title="Link to this heading">#</a></h3>
 <p>Let’s check the statistics of the dataset after the preprocessing</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
 </pre></div>
@@ -1629,7 +1881,7 @@ lable distribution is almosto uniform.</p>
 </section>
 </section>
 <section id="bias-detection">
-<h2>Bias detection<a class="headerlink" href="#bias-detection" title="Link to this heading">¶</a></h2>
+<h2>Bias detection<a class="headerlink" href="#bias-detection" title="Link to this heading">#</a></h2>
 <p>Detecting bias on the dataset using Statistical Parity Difference</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">spd</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">statistical_parity_difference</span><span class="p">()</span>
 </pre></div>
@@ -1667,7 +1919,7 @@ lable distribution is almosto uniform.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_117_0.png" src="_images/main_117_0.png" />
+<img alt="_images/main_115_0.png" src="_images/main_115_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grouped_regions_encoder</span> <span class="o">=</span> <span class="n">OrdinalEncoder</span><span class="p">()</span>
 <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;grouped_regions&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">grouped_regions_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df1</span><span class="p">[[</span><span class="s1">&#39;grouped_regions&#39;</span><span class="p">]])</span>
 </pre></div>
@@ -1693,7 +1945,7 @@ lable distribution is almosto uniform.</p>
 </pre></div>
 </div>
 <section id="correlation-matrix">
-<h3>Correlation Matrix<a class="headerlink" href="#correlation-matrix" title="Link to this heading">¶</a></h3>
+<h3>Correlation Matrix<a class="headerlink" href="#correlation-matrix" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df1</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Correlation Matrix&quot;</span><span class="p">)</span>
@@ -1701,13 +1953,13 @@ lable distribution is almosto uniform.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_122_0.png" src="_images/main_122_0.png" />
+<img alt="_images/main_120_0.png" src="_images/main_120_0.png" />
 </section>
 </section>
 <section id="bias-mitigation-techniques">
-<h2>Bias mitigation techniques<a class="headerlink" href="#bias-mitigation-techniques" title="Link to this heading">¶</a></h2>
+<h2>Bias mitigation techniques<a class="headerlink" href="#bias-mitigation-techniques" title="Link to this heading">#</a></h2>
 <section id="utils">
-<h3>Utils<a class="headerlink" href="#utils" title="Link to this heading">¶</a></h3>
+<h3>Utils<a class="headerlink" href="#utils" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sensitive_feature</span> <span class="o">=</span> <span class="s1">&#39;grouped_regions&#39;</span>
 <span class="n">target</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">targets</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 
@@ -1795,7 +2047,7 @@ lable distribution is almosto uniform.</p>
 </div>
 </section>
 <section id="pre-processing">
-<h3>Pre-Processing<a class="headerlink" href="#pre-processing" title="Link to this heading">¶</a></h3>
+<h3>Pre-Processing<a class="headerlink" href="#pre-processing" title="Link to this heading">#</a></h3>
 <p>In this section, we preprocess the dataset to prepare it for fair
 machine learning analysis. The preprocessing steps include handling
 missing values, encoding categorical variables, and normalizing
@@ -1815,7 +2067,7 @@ measured by DPR, EOR, and SPD), there may be trade-offs with performance
 metrics. Additionally, the variance in fairness metrics highlights the
 impact of data imbalance, especially for under-represented groups.</p>
 <section id="utility-functions">
-<h4>Utility functions<a class="headerlink" href="#utility-functions" title="Link to this heading">¶</a></h4>
+<h4>Utility functions<a class="headerlink" href="#utility-functions" title="Link to this heading">#</a></h4>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">train_classifier</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Train a logistic regression classifier.</span>
@@ -1913,7 +2165,7 @@ impact of data imbalance, especially for under-represented groups.</p>
 </div>
 </section>
 <section id="naive-train-test-split">
-<h4>Naive Train-Test split<a class="headerlink" href="#naive-train-test-split" title="Link to this heading">¶</a></h4>
+<h4>Naive Train-Test split<a class="headerlink" href="#naive-train-test-split" title="Link to this heading">#</a></h4>
 <p>Firstly, we only consider one fold:</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">target</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="n">target</span><span class="p">]</span>
@@ -2028,12 +2280,12 @@ impact of data imbalance, especially for under-represented groups.</p>
 </pre></div>
 </div>
 <section id="fairness-metrics">
-<h5>Fairness metrics<a class="headerlink" href="#fairness-metrics" title="Link to this heading">¶</a></h5>
+<h5>Fairness metrics<a class="headerlink" href="#fairness-metrics" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">spd_results</span> <span class="o">=</span> <span class="n">compute_mean_spd</span><span class="p">(</span><span class="n">spd_values</span><span class="p">)</span>
 <span class="n">plot_spd_results</span><span class="p">(</span><span class="n">spd_results</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_139_0.png" src="_images/main_139_0.png" />
+<img alt="_images/main_137_0.png" src="_images/main_137_0.png" />
 <p>Plot DPR and EOR</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fairness_values</span> <span class="o">=</span> <span class="n">compute_metrics_dict</span><span class="p">(</span><span class="n">fairness_metrics</span><span class="p">)</span>
 <span class="n">print_mean_values</span><span class="p">(</span><span class="n">fairness_values</span><span class="p">)</span> <span class="c1"># Print the fairness values for each approach</span>
@@ -2059,13 +2311,13 @@ impact of data imbalance, especially for under-represented groups.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_metrics</span><span class="p">(</span><span class="n">fairness_values</span><span class="p">,</span> <span class="n">preprocess_approaches</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fairness&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_142_0.png" src="_images/main_142_0.png" />
-<img alt="_images/main_142_1.png" src="_images/main_142_1.png" />
-<img alt="_images/main_142_2.png" src="_images/main_142_2.png" />
-<img alt="_images/main_142_3.png" src="_images/main_142_3.png" />
+<img alt="_images/main_140_0.png" src="_images/main_140_0.png" />
+<img alt="_images/main_140_1.png" src="_images/main_140_1.png" />
+<img alt="_images/main_140_2.png" src="_images/main_140_2.png" />
+<img alt="_images/main_140_3.png" src="_images/main_140_3.png" />
 </section>
 <section id="performance-metrics">
-<h5>Performance metrics<a class="headerlink" href="#performance-metrics" title="Link to this heading">¶</a></h5>
+<h5>Performance metrics<a class="headerlink" href="#performance-metrics" title="Link to this heading">#</a></h5>
 <p>Our chosen metrics: Accuracy, Precision, Recall, AUC</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">performance_values</span> <span class="o">=</span> <span class="n">compute_metrics_dict</span><span class="p">(</span><span class="n">performance_metrics</span><span class="p">)</span>
 <span class="n">print_mean_values</span><span class="p">(</span><span class="n">performance_values</span><span class="p">)</span> <span class="c1"># Print the performance values for each approach</span>
@@ -2099,14 +2351,14 @@ impact of data imbalance, especially for under-represented groups.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_metrics</span><span class="p">(</span><span class="n">performance_values</span><span class="p">,</span> <span class="n">preprocess_approaches</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Performance&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_145_0.png" src="_images/main_145_0.png" />
-<img alt="_images/main_145_1.png" src="_images/main_145_1.png" />
-<img alt="_images/main_145_2.png" src="_images/main_145_2.png" />
-<img alt="_images/main_145_3.png" src="_images/main_145_3.png" />
+<img alt="_images/main_143_0.png" src="_images/main_143_0.png" />
+<img alt="_images/main_143_1.png" src="_images/main_143_1.png" />
+<img alt="_images/main_143_2.png" src="_images/main_143_2.png" />
+<img alt="_images/main_143_3.png" src="_images/main_143_3.png" />
 </section>
 </section>
 <section id="stratified-k-fold-cross-validation">
-<h4>Stratified K-fold cross-validation<a class="headerlink" href="#stratified-k-fold-cross-validation" title="Link to this heading">¶</a></h4>
+<h4>Stratified K-fold cross-validation<a class="headerlink" href="#stratified-k-fold-cross-validation" title="Link to this heading">#</a></h4>
 <p>We test two different splitting protocols, which, as we will see,
 significantly impact the results:</p>
 <ol class="arabic simple">
@@ -2246,7 +2498,7 @@ significantly impact the results:</p>
 </pre></div>
 </div>
 <section id="splitting-on-target-feature">
-<h5>1) Splitting on “target” feature<a class="headerlink" href="#splitting-on-target-feature" title="Link to this heading">¶</a></h5>
+<h5>1) Splitting on “target” feature<a class="headerlink" href="#splitting-on-target-feature" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">performance_metrics</span><span class="p">,</span> <span class="n">fairness_metrics</span><span class="p">,</span> <span class="n">spd_values</span> <span class="o">=</span> <span class="n">skf_cross_validation</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">sensitive_feature</span><span class="p">,</span> <span class="n">split_type</span><span class="o">=</span><span class="s1">&#39;target&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2255,7 +2507,7 @@ significantly impact the results:</p>
 <span class="n">plot_spd_results</span><span class="p">(</span><span class="n">spd_results</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Mean&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_151_0.png" src="_images/main_151_0.png" />
+<img alt="_images/main_149_0.png" src="_images/main_149_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fairness_values</span> <span class="o">=</span> <span class="n">compute_metrics_dict</span><span class="p">(</span><span class="n">fairness_metrics</span><span class="p">)</span>
 <span class="n">print_mean_values</span><span class="p">(</span><span class="n">fairness_values</span><span class="p">)</span> <span class="c1"># Print the fairness values for each approach</span>
 </pre></div>
@@ -2280,10 +2532,10 @@ significantly impact the results:</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_metrics</span><span class="p">(</span><span class="n">fairness_values</span><span class="p">,</span> <span class="n">preprocess_approaches</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fairness&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_153_0.png" src="_images/main_153_0.png" />
-<img alt="_images/main_153_1.png" src="_images/main_153_1.png" />
-<img alt="_images/main_153_2.png" src="_images/main_153_2.png" />
-<img alt="_images/main_153_3.png" src="_images/main_153_3.png" />
+<img alt="_images/main_151_0.png" src="_images/main_151_0.png" />
+<img alt="_images/main_151_1.png" src="_images/main_151_1.png" />
+<img alt="_images/main_151_2.png" src="_images/main_151_2.png" />
+<img alt="_images/main_151_3.png" src="_images/main_151_3.png" />
 <p>We spot a really high variance. Why is that? Let’s inspect the
 metrics for each fold.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">approach</span> <span class="ow">in</span> <span class="n">fairness_metrics</span><span class="p">:</span>
@@ -2364,13 +2616,13 @@ exhaustive explanation will be given in the next sections.
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_metrics</span><span class="p">(</span><span class="n">performance_values</span><span class="p">,</span> <span class="n">preprocess_approaches</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Performance&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_159_0.png" src="_images/main_159_0.png" />
-<img alt="_images/main_159_1.png" src="_images/main_159_1.png" />
-<img alt="_images/main_159_2.png" src="_images/main_159_2.png" />
-<img alt="_images/main_159_3.png" src="_images/main_159_3.png" />
+<img alt="_images/main_157_0.png" src="_images/main_157_0.png" />
+<img alt="_images/main_157_1.png" src="_images/main_157_1.png" />
+<img alt="_images/main_157_2.png" src="_images/main_157_2.png" />
+<img alt="_images/main_157_3.png" src="_images/main_157_3.png" />
 </section>
 <section id="splitting-on-target-sensitive-feature">
-<h5>2) Splitting on “target + sensitive” feature<a class="headerlink" href="#splitting-on-target-sensitive-feature" title="Link to this heading">¶</a></h5>
+<h5>2) Splitting on “target + sensitive” feature<a class="headerlink" href="#splitting-on-target-sensitive-feature" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">performance_metrics</span><span class="p">,</span> <span class="n">fairness_metrics</span><span class="p">,</span> <span class="n">spd_values</span> <span class="o">=</span> <span class="n">skf_cross_validation</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">sensitive_feature</span><span class="p">,</span> <span class="n">split_type</span><span class="o">=</span><span class="s1">&#39;target+sensitive&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2381,7 +2633,7 @@ exhaustive explanation will be given in the next sections.
 <span class="n">plot_spd_results</span><span class="p">(</span><span class="n">spd_results</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Mean&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_163_0.png" src="_images/main_163_0.png" />
+<img alt="_images/main_161_0.png" src="_images/main_161_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fairness_values</span> <span class="o">=</span> <span class="n">compute_metrics_dict</span><span class="p">(</span><span class="n">fairness_metrics</span><span class="p">)</span>
 <span class="n">print_mean_values</span><span class="p">(</span><span class="n">fairness_values</span><span class="p">)</span> <span class="c1"># Print the fairness values for each approach</span>
 </pre></div>
@@ -2406,10 +2658,10 @@ exhaustive explanation will be given in the next sections.
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_metrics</span><span class="p">(</span><span class="n">fairness_values</span><span class="p">,</span> <span class="n">preprocess_approaches</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fairness&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_165_0.png" src="_images/main_165_0.png" />
-<img alt="_images/main_165_1.png" src="_images/main_165_1.png" />
-<img alt="_images/main_165_2.png" src="_images/main_165_2.png" />
-<img alt="_images/main_165_3.png" src="_images/main_165_3.png" />
+<img alt="_images/main_163_0.png" src="_images/main_163_0.png" />
+<img alt="_images/main_163_1.png" src="_images/main_163_1.png" />
+<img alt="_images/main_163_2.png" src="_images/main_163_2.png" />
+<img alt="_images/main_163_3.png" src="_images/main_163_3.png" />
 <p>We can clearly see that the second protocol leads to better fairness
 metrics. Specifically, SPD is lower, while EOR and DPR are higher.
 This is because stratifying on the target + sensitive combination
@@ -2449,14 +2701,14 @@ reliable and stable.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_metrics</span><span class="p">(</span><span class="n">performance_values</span><span class="p">,</span> <span class="n">preprocess_approaches</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Performance&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_169_0.png" src="_images/main_169_0.png" />
-<img alt="_images/main_169_1.png" src="_images/main_169_1.png" />
-<img alt="_images/main_169_2.png" src="_images/main_169_2.png" />
-<img alt="_images/main_169_3.png" src="_images/main_169_3.png" />
+<img alt="_images/main_167_0.png" src="_images/main_167_0.png" />
+<img alt="_images/main_167_1.png" src="_images/main_167_1.png" />
+<img alt="_images/main_167_2.png" src="_images/main_167_2.png" />
+<img alt="_images/main_167_3.png" src="_images/main_167_3.png" />
 </section>
 </section>
 <section id="data-rebalancing-checking-the-robustness-of-our-pipeline">
-<h4>Data rebalancing: checking the robustness of our pipeline<a class="headerlink" href="#data-rebalancing-checking-the-robustness-of-our-pipeline" title="Link to this heading">¶</a></h4>
+<h4>Data rebalancing: checking the robustness of our pipeline<a class="headerlink" href="#data-rebalancing-checking-the-robustness-of-our-pipeline" title="Link to this heading">#</a></h4>
 <p>The dataset is imbalanced, which prevents us from obtaining meaningful
 results even when following a correct pipeline. To ensure that each fold
 contains at least one example from underrepresented (unfair) groups, we
@@ -2532,12 +2784,12 @@ expect more reliable results. We will perform the split using the
 </pre></div>
 </div>
 <section id="id1">
-<h5>Fairness metrics<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h5>
+<h5>Fairness metrics<a class="headerlink" href="#id1" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">spd_results</span> <span class="o">=</span> <span class="n">compute_mean_spd</span><span class="p">(</span><span class="n">spd_values</span><span class="p">)</span>
 <span class="n">plot_spd_results</span><span class="p">(</span><span class="n">spd_results</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Mean&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_177_0.png" src="_images/main_177_0.png" />
+<img alt="_images/main_175_0.png" src="_images/main_175_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fairness_values</span> <span class="o">=</span> <span class="n">compute_metrics_dict</span><span class="p">(</span><span class="n">fairness_metrics</span><span class="p">)</span>
 <span class="n">print_mean_values</span><span class="p">(</span><span class="n">fairness_values</span><span class="p">)</span> <span class="c1"># Print the fairness values for each approach</span>
 </pre></div>
@@ -2562,13 +2814,13 @@ expect more reliable results. We will perform the split using the
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_metrics</span><span class="p">(</span><span class="n">fairness_values</span><span class="p">,</span> <span class="n">preprocess_approaches</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fairness&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_179_0.png" src="_images/main_179_0.png" />
-<img alt="_images/main_179_1.png" src="_images/main_179_1.png" />
-<img alt="_images/main_179_2.png" src="_images/main_179_2.png" />
-<img alt="_images/main_179_3.png" src="_images/main_179_3.png" />
+<img alt="_images/main_177_0.png" src="_images/main_177_0.png" />
+<img alt="_images/main_177_1.png" src="_images/main_177_1.png" />
+<img alt="_images/main_177_2.png" src="_images/main_177_2.png" />
+<img alt="_images/main_177_3.png" src="_images/main_177_3.png" />
 </section>
 <section id="id2">
-<h5>Performance metrics<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h5>
+<h5>Performance metrics<a class="headerlink" href="#id2" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">performance_values</span> <span class="o">=</span> <span class="n">compute_metrics_dict</span><span class="p">(</span><span class="n">performance_metrics</span><span class="p">)</span>
 <span class="n">print_mean_values</span><span class="p">(</span><span class="n">performance_values</span><span class="p">)</span> <span class="c1"># Print the fairness values for each approach</span>
 </pre></div>
@@ -2601,13 +2853,13 @@ expect more reliable results. We will perform the split using the
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_metrics</span><span class="p">(</span><span class="n">performance_values</span><span class="p">,</span> <span class="n">preprocess_approaches</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Performance&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_182_0.png" src="_images/main_182_0.png" />
-<img alt="_images/main_182_1.png" src="_images/main_182_1.png" />
-<img alt="_images/main_182_2.png" src="_images/main_182_2.png" />
-<img alt="_images/main_182_3.png" src="_images/main_182_3.png" />
+<img alt="_images/main_180_0.png" src="_images/main_180_0.png" />
+<img alt="_images/main_180_1.png" src="_images/main_180_1.png" />
+<img alt="_images/main_180_2.png" src="_images/main_180_2.png" />
+<img alt="_images/main_180_3.png" src="_images/main_180_3.png" />
 </section>
 <section id="id3">
-<h5>Considerations<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h5>
+<h5>Considerations<a class="headerlink" href="#id3" title="Link to this heading">#</a></h5>
 <p>As expected, we obtain slightly better results for the fairness metrics.
 The improvement is especially noticeable for DPR and EOR, which now show
 reasonable variance and effectively increase compared to the baseline.</p>
@@ -2735,7 +2987,7 @@ reasonable variance and effectively increase compared to the baseline.</p>
 </section>
 </section>
 <section id="in-processing">
-<h3>In-Processing<a class="headerlink" href="#in-processing" title="Link to this heading">¶</a></h3>
+<h3>In-Processing<a class="headerlink" href="#in-processing" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sensitive_feature</span> <span class="o">=</span> <span class="s1">&#39;grouped_regions&#39;</span>
 <span class="n">target</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">targets</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 </pre></div>
@@ -2837,7 +3089,7 @@ reasonable variance and effectively increase compared to the baseline.</p>
 </pre></div>
 </div>
 <section id="adversarial-debiasing">
-<h4>1) Adversarial Debiasing<a class="headerlink" href="#adversarial-debiasing" title="Link to this heading">¶</a></h4>
+<h4>1) Adversarial Debiasing<a class="headerlink" href="#adversarial-debiasing" title="Link to this heading">#</a></h4>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">baseline_performance_metrics</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">baseline_fairness_metrics</span> <span class="o">=</span> <span class="p">[]</span>
 
@@ -2853,7 +3105,7 @@ reasonable variance and effectively increase compared to the baseline.</p>
 </pre></div>
 </div>
 <section id="baseline">
-<h5>Baseline<a class="headerlink" href="#baseline" title="Link to this heading">¶</a></h5>
+<h5>Baseline<a class="headerlink" href="#baseline" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">fairlib.inprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">AdversarialDebiasing</span>
 
 <span class="n">k</span> <span class="o">=</span> <span class="mi">5</span>
@@ -2930,7 +3182,7 @@ reasonable variance and effectively increase compared to the baseline.</p>
 </div>
 </section>
 <section id="with-different-adversary-weights">
-<h5>With different adversary weights<a class="headerlink" href="#with-different-adversary-weights" title="Link to this heading">¶</a></h5>
+<h5>With different adversary weights<a class="headerlink" href="#with-different-adversary-weights" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># In-processing con Adversarial Debiasing su diversi lambda_adv</span>
 <span class="n">adv_weights</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
 <span class="n">adv_spds</span> <span class="o">=</span> <span class="p">[]</span>
@@ -3076,7 +3328,7 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_202_0.png" src="_images/main_202_0.png" />
+<img alt="_images/main_200_0.png" src="_images/main_200_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">lam</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">adv_weights</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;== Bar plot per λ = </span><span class="si">{</span><span class="n">lam</span><span class="si">}</span><span class="s2"> ==&quot;</span><span class="p">)</span>
 
@@ -3108,18 +3360,21 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_203_1.png" src="_images/main_203_1.png" />
-<img alt="_images/main_203_2.png" src="_images/main_203_2.png" />
+<img alt="_images/main_201_1.png" src="_images/main_201_1.png" />
+<img alt="_images/main_201_2.png" src="_images/main_201_2.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_203_4.png" src="_images/main_203_4.png" />
-<img alt="_images/main_203_5.png" src="_images/main_203_5.png" />
+<img alt="_images/main_201_4.png" src="_images/main_201_4.png" />
+<img alt="_images/main_201_5.png" src="_images/main_201_5.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_203_7.png" src="_images/main_203_7.png" />
-<img alt="_images/main_203_8.png" src="_images/main_203_8.png" />
+<img alt="_images/main_201_7.png" src="_images/main_201_7.png" />
+<img alt="_images/main_201_8.png" src="_images/main_201_8.png" />
+<p>Adversarial Debiasing demonstrated a notably positive impact on fairness
+metrics, with substantial improvements in both Equalized Odds Ratio
+(EOR) and—most significantly—Demographic Parity Ratio (DPR).</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lambda_vals</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
 
 <span class="n">accuracies</span> <span class="o">=</span> <span class="p">[]</span>
@@ -3147,7 +3402,7 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_204_0.png" src="_images/main_204_0.png" />
+<img alt="_images/main_203_0.png" src="_images/main_203_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dprs</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">eors</span> <span class="o">=</span> <span class="p">[]</span>
 
@@ -3168,11 +3423,13 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_205_0.png" src="_images/main_205_0.png" />
+<img alt="_images/main_204_0.png" src="_images/main_204_0.png" />
+<p>Here we can see that the bigger weight lambda give the better result in
+terms of fairness</p>
 </section>
 </section>
 <section id="fauci">
-<h4>2) FaUCI<a class="headerlink" href="#fauci" title="Link to this heading">¶</a></h4>
+<h4>2) FaUCI<a class="headerlink" href="#fauci" title="Link to this heading">#</a></h4>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">reg_weights</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">]</span>
 <span class="n">epochs</span> <span class="o">=</span> <span class="mi">100</span>
@@ -3367,6 +3624,19 @@ reasonable variance and effectively increase compared to the baseline.</p>
 </div>
 <img alt="_images/main_210_10.png" src="_images/main_210_10.png" />
 <img alt="_images/main_210_11.png" src="_images/main_210_11.png" />
+<p>In contrast to Adversarial Debiasing, the FaUCI (Fair Uncertainty-aware
+Classification Index) method did not yield substantial improvements in
+fairness metrics.</p>
+<p>In particular, when increasing the fairness regularization parameter λ,
+we observed a destabilization of the Equalized Odds Ratio (EOR)—often
+resulting in explosive or erratic values. This suggests that the model,
+under strong regularization pressure, struggles to maintain balanced
+error rates across sensitive groups.</p>
+<p>At the same time, while Demographic Parity Ratio (DPR) tends to decrease
+slightly under high λ values (indicating some fairness enforcement),
+this comes at the cost of a significant drop in recall. The model
+becomes more conservative and tends to under-predict the positive class,
+especially for minority groups.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fauci_lambdas</span> <span class="o">=</span> <span class="p">[</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">reg_weights</span> <span class="k">if</span> <span class="n">w</span> <span class="o">!=</span> <span class="mf">0.0</span><span class="p">]</span>
 
 <span class="n">accuracies</span> <span class="o">=</span> <span class="p">[]</span>
@@ -3396,7 +3666,7 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_211_0.png" src="_images/main_211_0.png" />
+<img alt="_images/main_212_0.png" src="_images/main_212_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fauci_lambdas</span> <span class="o">=</span> <span class="p">[</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">reg_weights</span> <span class="k">if</span> <span class="n">w</span> <span class="o">!=</span> <span class="mf">0.0</span><span class="p">]</span>
 
 <span class="n">dprs</span> <span class="o">=</span> <span class="p">[]</span>
@@ -3420,10 +3690,10 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_212_0.png" src="_images/main_212_0.png" />
+<img alt="_images/main_213_0.png" src="_images/main_213_0.png" />
 </section>
 <section id="prejudice-remover">
-<h4>3) Prejudice Remover<a class="headerlink" href="#prejudice-remover" title="Link to this heading">¶</a></h4>
+<h4>3) Prejudice Remover<a class="headerlink" href="#prejudice-remover" title="Link to this heading">#</a></h4>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">etas</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">]</span>
 <span class="n">epochs</span> <span class="o">=</span> <span class="mi">100</span>
@@ -3575,7 +3845,7 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_216_0.png" src="_images/main_216_0.png" />
+<img alt="_images/main_217_0.png" src="_images/main_217_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">eta</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">etas</span><span class="p">[</span><span class="mi">1</span><span class="p">:]):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;== Bar plot per η = </span><span class="si">{</span><span class="n">eta</span><span class="si">}</span><span class="s2"> ==&quot;</span><span class="p">)</span>
 
@@ -3607,23 +3877,37 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_217_1.png" src="_images/main_217_1.png" />
-<img alt="_images/main_217_2.png" src="_images/main_217_2.png" />
+<img alt="_images/main_218_1.png" src="_images/main_218_1.png" />
+<img alt="_images/main_218_2.png" src="_images/main_218_2.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_217_4.png" src="_images/main_217_4.png" />
-<img alt="_images/main_217_5.png" src="_images/main_217_5.png" />
+<img alt="_images/main_218_4.png" src="_images/main_218_4.png" />
+<img alt="_images/main_218_5.png" src="_images/main_218_5.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_217_7.png" src="_images/main_217_7.png" />
-<img alt="_images/main_217_8.png" src="_images/main_217_8.png" />
+<img alt="_images/main_218_7.png" src="_images/main_218_7.png" />
+<img alt="_images/main_218_8.png" src="_images/main_218_8.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.4</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_217_10.png" src="_images/main_217_10.png" />
-<img alt="_images/main_217_11.png" src="_images/main_217_11.png" />
+<img alt="_images/main_218_10.png" src="_images/main_218_10.png" />
+<img alt="_images/main_218_11.png" src="_images/main_218_11.png" />
+<p>While the Demographic Parity Ratio (DPR) slightly decreases compared to
+the baseline, the improvement is marginal and accompanied by increased
+variance, indicating inconsistent fairness behavior across folds.</p>
+<p>Notably, the Equalized Odds Ratio (EOR) remains very low in both models
+and exhibits high variability with the Prejudice Remover, suggesting
+instability in controlling error-rate parity.</p>
+<p>Additional experiments with higher η values showed diminishing returns:
+rather than further improving fairness, higher regularization introduced
+performance degradation without significant gains in DPR or EOR.</p>
+<p>These results suggest that Prejudice Remover is sensitive to η tuning,
+and beyond a certain threshold, increasing regularization may
+overconstrain the model—leading to worse generalization and unstable
+fairness outcomes. This behavior is especially problematic when the
+dataset lacks balanced representation across sensitive groups.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">etas_inprocessing</span> <span class="o">=</span> <span class="p">[</span><span class="n">eta</span> <span class="k">for</span> <span class="n">eta</span> <span class="ow">in</span> <span class="n">etas</span> <span class="k">if</span> <span class="n">eta</span> <span class="o">!=</span> <span class="mf">0.0</span><span class="p">]</span>
 
 <span class="n">accuracies</span> <span class="o">=</span> <span class="p">[]</span>
@@ -3653,7 +3937,7 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_218_0.png" src="_images/main_218_0.png" />
+<img alt="_images/main_220_0.png" src="_images/main_220_0.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">etas_inprocessing</span> <span class="o">=</span> <span class="p">[</span><span class="n">eta</span> <span class="k">for</span> <span class="n">eta</span> <span class="ow">in</span> <span class="n">etas</span> <span class="k">if</span> <span class="n">eta</span> <span class="o">!=</span> <span class="mf">0.0</span><span class="p">]</span>
 
 <span class="n">dprs</span> <span class="o">=</span> <span class="p">[]</span>
@@ -3677,12 +3961,12 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_219_0.png" src="_images/main_219_0.png" />
+<img alt="_images/main_221_0.png" src="_images/main_221_0.png" />
 </section>
 <section id="results-using-different-stratification">
-<h4>Results using different stratification<a class="headerlink" href="#results-using-different-stratification" title="Link to this heading">¶</a></h4>
+<h4>Results using different stratification<a class="headerlink" href="#results-using-different-stratification" title="Link to this heading">#</a></h4>
 <section id="id4">
-<h5>Adversarial Debiasing<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h5>
+<h5>Adversarial Debiasing<a class="headerlink" href="#id4" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">baseline_performance_metrics</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">baseline_fairness_metrics</span> <span class="o">=</span> <span class="p">[]</span>
 
@@ -3947,21 +4231,21 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_225_1.png" src="_images/main_225_1.png" />
-<img alt="_images/main_225_2.png" src="_images/main_225_2.png" />
+<img alt="_images/main_227_1.png" src="_images/main_227_1.png" />
+<img alt="_images/main_227_2.png" src="_images/main_227_2.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_225_4.png" src="_images/main_225_4.png" />
-<img alt="_images/main_225_5.png" src="_images/main_225_5.png" />
+<img alt="_images/main_227_4.png" src="_images/main_227_4.png" />
+<img alt="_images/main_227_5.png" src="_images/main_227_5.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_225_7.png" src="_images/main_225_7.png" />
-<img alt="_images/main_225_8.png" src="_images/main_225_8.png" />
+<img alt="_images/main_227_7.png" src="_images/main_227_7.png" />
+<img alt="_images/main_227_8.png" src="_images/main_227_8.png" />
 </section>
 <section id="id5">
-<h5>FaUCI<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h5>
+<h5>FaUCI<a class="headerlink" href="#id5" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">reg_weights</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">]</span>
 <span class="n">epochs</span> <span class="o">=</span> <span class="mi">100</span>
@@ -4150,26 +4434,26 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_229_1.png" src="_images/main_229_1.png" />
-<img alt="_images/main_229_2.png" src="_images/main_229_2.png" />
+<img alt="_images/main_231_1.png" src="_images/main_231_1.png" />
+<img alt="_images/main_231_2.png" src="_images/main_231_2.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_229_4.png" src="_images/main_229_4.png" />
-<img alt="_images/main_229_5.png" src="_images/main_229_5.png" />
+<img alt="_images/main_231_4.png" src="_images/main_231_4.png" />
+<img alt="_images/main_231_5.png" src="_images/main_231_5.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_229_7.png" src="_images/main_229_7.png" />
-<img alt="_images/main_229_8.png" src="_images/main_229_8.png" />
+<img alt="_images/main_231_7.png" src="_images/main_231_7.png" />
+<img alt="_images/main_231_8.png" src="_images/main_231_8.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.4</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_229_10.png" src="_images/main_229_10.png" />
-<img alt="_images/main_229_11.png" src="_images/main_229_11.png" />
+<img alt="_images/main_231_10.png" src="_images/main_231_10.png" />
+<img alt="_images/main_231_11.png" src="_images/main_231_11.png" />
 </section>
 <section id="id6">
-<h5>Prejudice Remover<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h5>
+<h5>Prejudice Remover<a class="headerlink" href="#id6" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">etas</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">]</span>
 <span class="n">epochs</span> <span class="o">=</span> <span class="mi">100</span>
@@ -4363,27 +4647,37 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_233_1.png" src="_images/main_233_1.png" />
-<img alt="_images/main_233_2.png" src="_images/main_233_2.png" />
+<img alt="_images/main_235_1.png" src="_images/main_235_1.png" />
+<img alt="_images/main_235_2.png" src="_images/main_235_2.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_233_4.png" src="_images/main_233_4.png" />
-<img alt="_images/main_233_5.png" src="_images/main_233_5.png" />
+<img alt="_images/main_235_4.png" src="_images/main_235_4.png" />
+<img alt="_images/main_235_5.png" src="_images/main_235_5.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_233_7.png" src="_images/main_233_7.png" />
-<img alt="_images/main_233_8.png" src="_images/main_233_8.png" />
+<img alt="_images/main_235_7.png" src="_images/main_235_7.png" />
+<img alt="_images/main_235_8.png" src="_images/main_235_8.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.4</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_233_10.png" src="_images/main_233_10.png" />
-<img alt="_images/main_233_11.png" src="_images/main_233_11.png" />
+<img alt="_images/main_235_10.png" src="_images/main_235_10.png" />
+<img alt="_images/main_235_11.png" src="_images/main_235_11.png" />
+<p>The stratification was applied on the joint distribution of the target
+and sensitive feature, rather than explicitly balancing sensitive groups
+alone. This resulted in folds where minority sensitive groups were
+underrepresented or missing entirely, severely compromising both the
+training signal for fairness-aware algorithms and the reliability of
+fairness evaluation.</p>
+<p>In contrast, when we stratified directly on the sensitive feature, each
+fold retained a more balanced representation of all groups, which
+significantly improved the performance of fairness-aware techniques for
+all methods</p>
 </section>
 </section>
 <section id="results-without-using-cross-validation">
-<h4>Results without using Cross-validation<a class="headerlink" href="#results-without-using-cross-validation" title="Link to this heading">¶</a></h4>
+<h4>Results without using Cross-validation<a class="headerlink" href="#results-without-using-cross-validation" title="Link to this heading">#</a></h4>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">metrics_bar_plot</span><span class="p">(</span><span class="n">dict1</span><span class="p">,</span> <span class="n">dict2</span><span class="p">,</span> <span class="n">label1</span><span class="p">,</span> <span class="n">label2</span><span class="p">,</span> <span class="n">metrics</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Metric Comparison (mean ± std)&quot;</span><span class="p">):</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">summarise</span><span class="p">(</span><span class="n">fold_dicts</span><span class="p">):</span>
@@ -4413,7 +4707,7 @@ reasonable variance and effectively increase compared to the baseline.</p>
 </pre></div>
 </div>
 <section id="id7">
-<h5>Adversarial Debiasing<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h5>
+<h5>Adversarial Debiasing<a class="headerlink" href="#id7" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">baseline_performance_metrics</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">baseline_fairness_metrics</span> <span class="o">=</span> <span class="p">[]</span>
 
@@ -4543,11 +4837,11 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_240_0.png" src="_images/main_240_0.png" />
-<img alt="_images/main_240_1.png" src="_images/main_240_1.png" />
+<img alt="_images/main_243_0.png" src="_images/main_243_0.png" />
+<img alt="_images/main_243_1.png" src="_images/main_243_1.png" />
 </section>
 <section id="id8">
-<h5>FaUCI<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h5>
+<h5>FaUCI<a class="headerlink" href="#id8" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">target</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="n">target</span><span class="p">]</span>
 
@@ -4673,26 +4967,26 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="p">(</span><span class="n">FaUCI</span><span class="p">)</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_244_1.png" src="_images/main_244_1.png" />
-<img alt="_images/main_244_2.png" src="_images/main_244_2.png" />
+<img alt="_images/main_247_1.png" src="_images/main_247_1.png" />
+<img alt="_images/main_247_2.png" src="_images/main_247_2.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="p">(</span><span class="n">FaUCI</span><span class="p">)</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_244_4.png" src="_images/main_244_4.png" />
-<img alt="_images/main_244_5.png" src="_images/main_244_5.png" />
+<img alt="_images/main_247_4.png" src="_images/main_247_4.png" />
+<img alt="_images/main_247_5.png" src="_images/main_247_5.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="p">(</span><span class="n">FaUCI</span><span class="p">)</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_244_7.png" src="_images/main_244_7.png" />
-<img alt="_images/main_244_8.png" src="_images/main_244_8.png" />
+<img alt="_images/main_247_7.png" src="_images/main_247_7.png" />
+<img alt="_images/main_247_8.png" src="_images/main_247_8.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.4</span> <span class="p">(</span><span class="n">FaUCI</span><span class="p">)</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_244_10.png" src="_images/main_244_10.png" />
-<img alt="_images/main_244_11.png" src="_images/main_244_11.png" />
+<img alt="_images/main_247_10.png" src="_images/main_247_10.png" />
+<img alt="_images/main_247_11.png" src="_images/main_247_11.png" />
 </section>
 <section id="prejudice-removal">
-<h5>Prejudice Removal<a class="headerlink" href="#prejudice-removal" title="Link to this heading">¶</a></h5>
+<h5>Prejudice Removal<a class="headerlink" href="#prejudice-removal" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">target</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="n">target</span><span class="p">]</span>
 
@@ -4808,27 +5102,27 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_248_1.png" src="_images/main_248_1.png" />
-<img alt="_images/main_248_2.png" src="_images/main_248_2.png" />
+<img alt="_images/main_251_1.png" src="_images/main_251_1.png" />
+<img alt="_images/main_251_2.png" src="_images/main_251_2.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_248_4.png" src="_images/main_248_4.png" />
-<img alt="_images/main_248_5.png" src="_images/main_248_5.png" />
+<img alt="_images/main_251_4.png" src="_images/main_251_4.png" />
+<img alt="_images/main_251_5.png" src="_images/main_251_5.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_248_7.png" src="_images/main_248_7.png" />
-<img alt="_images/main_248_8.png" src="_images/main_248_8.png" />
+<img alt="_images/main_251_7.png" src="_images/main_251_7.png" />
+<img alt="_images/main_251_8.png" src="_images/main_251_8.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.4</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_248_10.png" src="_images/main_248_10.png" />
-<img alt="_images/main_248_11.png" src="_images/main_248_11.png" />
+<img alt="_images/main_251_10.png" src="_images/main_251_10.png" />
+<img alt="_images/main_251_11.png" src="_images/main_251_11.png" />
 </section>
 </section>
 <section id="results-duplicating-positive-samples">
-<h4>Results duplicating positive samples<a class="headerlink" href="#results-duplicating-positive-samples" title="Link to this heading">¶</a></h4>
+<h4>Results duplicating positive samples<a class="headerlink" href="#results-duplicating-positive-samples" title="Link to this heading">#</a></h4>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rnd</span>
 <span class="n">pos</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[(</span><span class="n">df1</span><span class="p">[</span><span class="n">sensitive_feature</span><span class="p">]</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">df1</span><span class="p">[</span><span class="n">target</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
@@ -4838,7 +5132,7 @@ reasonable variance and effectively increase compared to the baseline.</p>
 </pre></div>
 </div>
 <section id="id9">
-<h5>FaUCI<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h5>
+<h5>FaUCI<a class="headerlink" href="#id9" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">reg_weights</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">]</span>
 <span class="n">epochs</span> <span class="o">=</span> <span class="mi">100</span>
@@ -4997,26 +5291,26 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_254_1.png" src="_images/main_254_1.png" />
-<img alt="_images/main_254_2.png" src="_images/main_254_2.png" />
+<img alt="_images/main_257_1.png" src="_images/main_257_1.png" />
+<img alt="_images/main_257_2.png" src="_images/main_257_2.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_254_4.png" src="_images/main_254_4.png" />
-<img alt="_images/main_254_5.png" src="_images/main_254_5.png" />
+<img alt="_images/main_257_4.png" src="_images/main_257_4.png" />
+<img alt="_images/main_257_5.png" src="_images/main_257_5.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_254_7.png" src="_images/main_254_7.png" />
-<img alt="_images/main_254_8.png" src="_images/main_254_8.png" />
+<img alt="_images/main_257_7.png" src="_images/main_257_7.png" />
+<img alt="_images/main_257_8.png" src="_images/main_257_8.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">λ</span> <span class="o">=</span> <span class="mf">0.4</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_254_10.png" src="_images/main_254_10.png" />
-<img alt="_images/main_254_11.png" src="_images/main_254_11.png" />
+<img alt="_images/main_257_10.png" src="_images/main_257_10.png" />
+<img alt="_images/main_257_11.png" src="_images/main_257_11.png" />
 </section>
 <section id="id10">
-<h5>Prejudice Removal<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h5>
+<h5>Prejudice Removal<a class="headerlink" href="#id10" title="Link to this heading">#</a></h5>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">etas</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">]</span>
 <span class="n">epochs</span> <span class="o">=</span> <span class="mi">100</span>
@@ -5180,29 +5474,59 @@ reasonable variance and effectively increase compared to the baseline.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_258_1.png" src="_images/main_258_1.png" />
-<img alt="_images/main_258_2.png" src="_images/main_258_2.png" />
+<img alt="_images/main_261_1.png" src="_images/main_261_1.png" />
+<img alt="_images/main_261_2.png" src="_images/main_261_2.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_258_4.png" src="_images/main_258_4.png" />
-<img alt="_images/main_258_5.png" src="_images/main_258_5.png" />
+<img alt="_images/main_261_4.png" src="_images/main_261_4.png" />
+<img alt="_images/main_261_5.png" src="_images/main_261_5.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_258_7.png" src="_images/main_258_7.png" />
-<img alt="_images/main_258_8.png" src="_images/main_258_8.png" />
+<img alt="_images/main_261_7.png" src="_images/main_261_7.png" />
+<img alt="_images/main_261_8.png" src="_images/main_261_8.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==</span> <span class="n">Bar</span> <span class="n">plot</span> <span class="n">per</span> <span class="n">η</span> <span class="o">=</span> <span class="mf">0.4</span> <span class="o">==</span>
 </pre></div>
 </div>
-<img alt="_images/main_258_10.png" src="_images/main_258_10.png" />
-<img alt="_images/main_258_11.png" src="_images/main_258_11.png" />
-<p>The result for fairness metrics show a significant improvement</p>
+<img alt="_images/main_261_10.png" src="_images/main_261_10.png" />
+<img alt="_images/main_261_11.png" src="_images/main_261_11.png" />
+<p>The result for fairness metrics show a slight improvement</p>
+<p>Among these, Adversarial Debiasing consistently achieved the best
+trade-off between fairness and accuracy. It works by introducing an
+adversarial component that learns to predict the sensitive attribute,
+while the main model is trained to minimize its predictive power. This
+leads to internal representations that are less biased and more
+equitable across groups.</p>
+<p>A key strength of Adversarial Debiasing is its ability to generalize
+fairness constraints, even in the presence of limited data from minority
+sensitive groups. Unlike other techniques that rely heavily on
+subgroup-specific examples, the adversarial setup enforces global
+invariance to the sensitive attribute across the entire representation
+space. As a result, it can still learn fair representations even when
+some subgroups are underrepresented, which explains its robust
+improvement in fairness metrics despite data imbalance. Because this
+constraint operates at the level of feature representations, and not
+directly on group statistics, it’s less sensitive to data imbalance.
+Even if there are fewer minority samples, the model still gets a signal
+from the adversary about whether sensitive info is leaking — and it
+adjusts accordingly.</p>
+<p>In contrast, FaUCI and Prejudice Removal showed limited improvement in
+fairness, even when tuning regularization strengths (lambda, eta). The
+main bottleneck was the lack of sufficient examples from minority
+sensitive groups, which prevented the algorithms from learning
+generalizable fairness constraints. Just doubling the positive examples
+partially mitigated this issue, improving fairness outcomes for
+underrepresented subgroups.</p>
+<p>Furthermore, we observed that fairness metrics degraded when using
+standard k-fold cross-validation, due to the absence of stratification
+over sensitive attributes. Some folds lacked representation for certain
+groups, making fairness evaluation unreliable.</p>
 </section>
 </section>
 </section>
 <section id="post-processing">
-<h3>Post-Processing<a class="headerlink" href="#post-processing" title="Link to this heading">¶</a></h3>
+<h3>Post-Processing<a class="headerlink" href="#post-processing" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sensitive_feature</span> <span class="o">=</span> <span class="s1">&#39;grouped_regions&#39;</span>
 <span class="n">target</span> <span class="o">=</span> <span class="s1">&#39;hired&#39;</span>
 <span class="n">postproc_df</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -5367,6 +5691,11 @@ the protocol itself when we split in training and test.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">postproc_baseline_fairness_metrics</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">eq_odds_fairness_metrics</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">calib_eq_odds_fairness_metrics</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">postproc_baseline_performance_metrics</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">eq_odds_performance_metrics</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">calib_eq_odds_performance_metrics</span> <span class="o">=</span> <span class="p">[]</span>
+
 <span class="n">spds</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="n">X</span> <span class="o">=</span> <span class="n">fl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">postproc_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">copy</span><span class="p">())</span>
@@ -5389,6 +5718,7 @@ the protocol itself when we split in training and test.</p>
 <span class="n">df_test</span><span class="p">[</span><span class="n">target</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_test</span>
 
 <span class="n">postproc_baseline_fairness_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">compute_fairness_metrics</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_test</span><span class="p">,</span> <span class="n">df_test</span><span class="p">[</span><span class="n">sensitive_feature</span><span class="p">]))</span>
+<span class="n">postproc_baseline_performance_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">compute_performance_metrics</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_test</span><span class="p">,</span> <span class="n">y_scores_test</span><span class="p">))</span>
 
 <span class="n">calib_eq_odds</span> <span class="o">=</span> <span class="n">calib_eq_odds</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df_train</span><span class="p">,</span> <span class="n">y_scores_train</span><span class="p">)</span>
 <span class="n">transformed_pred</span> <span class="o">=</span> <span class="n">calib_eq_odds</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">df_test</span><span class="p">,</span> <span class="n">y_scores_test</span><span class="p">)</span>
@@ -5402,6 +5732,9 @@ the protocol itself when we split in training and test.</p>
 
 <span class="n">calib_eq_odds_fairness_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">compute_fairness_metrics</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">transformed_pred</span><span class="p">,</span> <span class="n">df_test</span><span class="p">[</span><span class="n">sensitive_feature</span><span class="p">]))</span>
 <span class="n">eq_odds_fairness_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">compute_fairness_metrics</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">transformed_eq_pred</span><span class="p">,</span> <span class="n">df_test</span><span class="p">[</span><span class="n">sensitive_feature</span><span class="p">]))</span>
+
+<span class="n">calib_eq_odds_performance_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">compute_performance_metrics</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">transformed_pred</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">transformed_pred</span><span class="p">))))</span>
+<span class="n">eq_odds_performance_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">compute_performance_metrics</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">transformed_eq_pred</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">transformed_pred</span><span class="p">))))</span>
 </pre></div>
 </div>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">metrics_bar_plot</span><span class="p">(</span><span class="n">postproc_baseline_fairness_metrics</span><span class="p">,</span>
@@ -5419,8 +5752,25 @@ the protocol itself when we split in training and test.</p>
                  <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Baseline vs Equalized Odds&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_270_0.png" src="_images/main_270_0.png" />
-<img alt="_images/main_270_1.png" src="_images/main_270_1.png" />
+<img alt="_images/main_274_0.png" src="_images/main_274_0.png" />
+<img alt="_images/main_274_1.png" src="_images/main_274_1.png" />
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">metrics_bar_plot</span><span class="p">(</span><span class="n">postproc_baseline_performance_metrics</span><span class="p">,</span>
+                 <span class="n">calib_eq_odds_performance_metrics</span><span class="p">,</span>
+                 <span class="n">label1</span><span class="o">=</span><span class="s1">&#39;w/o post-processing&#39;</span><span class="p">,</span>
+                 <span class="n">label2</span><span class="o">=</span><span class="s1">&#39;with post-processing&#39;</span><span class="p">,</span>
+                 <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">,</span><span class="s1">&#39;precision&#39;</span><span class="p">,</span> <span class="s1">&#39;recall&#39;</span><span class="p">,</span> <span class="s1">&#39;auc&#39;</span><span class="p">],</span>
+                 <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Baseline vs Calibrated Equalized Odds Performances&quot;</span><span class="p">)</span>
+
+<span class="n">metrics_bar_plot</span><span class="p">(</span><span class="n">postproc_baseline_performance_metrics</span><span class="p">,</span>
+                 <span class="n">eq_odds_performance_metrics</span><span class="p">,</span>
+                 <span class="n">label1</span><span class="o">=</span><span class="s1">&#39;w/o post-processing&#39;</span><span class="p">,</span>
+                 <span class="n">label2</span><span class="o">=</span><span class="s1">&#39;with post-processing&#39;</span><span class="p">,</span>
+                 <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">,</span><span class="s1">&#39;precision&#39;</span><span class="p">,</span> <span class="s1">&#39;recall&#39;</span><span class="p">,</span> <span class="s1">&#39;auc&#39;</span><span class="p">],</span>
+                 <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Baseline vs Equalized Odds Performances&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/main_275_0.png" src="_images/main_275_0.png" />
+<img alt="_images/main_275_1.png" src="_images/main_275_1.png" />
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Baseline&#39;</span><span class="p">,</span> <span class="s1">&#39;Equalized Odds&#39;</span><span class="p">,</span> <span class="s1">&#39;Calibrated Equalized Odds&#39;</span><span class="p">]</span>
 
 <span class="n">results</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
@@ -5438,7 +5788,7 @@ the protocol itself when we split in training and test.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="_images/main_271_0.png" src="_images/main_271_0.png" />
+<img alt="_images/main_276_0.png" src="_images/main_276_0.png" />
 <p>Because the protected slice has only two positive cases, hard-threshold
 Equalized Odds finds no feasible adjustment and leaves the metrics
 unchanged, whereas the more flexible Calibrated Equalized Odds can
@@ -5470,6 +5820,11 @@ sensitive-group) combination.</p>
 <span class="n">eq_odds_fairness_metrics</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">calib_eq_odds_fairness_metrics</span> <span class="o">=</span> <span class="p">[]</span>
 
+<span class="n">postproc_baseline_performance_metrics</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">eq_odds_performance_metrics</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">calib_eq_odds_performance_metrics</span> <span class="o">=</span> <span class="p">[]</span>
+
+
 <span class="k">for</span> <span class="n">fold</span><span class="p">,</span> <span class="p">(</span><span class="n">train_idx</span><span class="p">,</span> <span class="n">test_idx</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">kf</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">postproc_df</span><span class="p">,</span> <span class="n">postproc_df</span><span class="p">[</span><span class="n">target</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">+</span><span class="n">postproc_df</span><span class="p">[</span><span class="n">sensitive_feature</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">))):</span>
     <span class="n">train_df</span> <span class="o">=</span> <span class="n">postproc_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">train_idx</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
     <span class="n">test_df</span> <span class="o">=</span> <span class="n">postproc_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">test_idx</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -5484,6 +5839,7 @@ sensitive-group) combination.</p>
     <span class="n">y_test_pred</span> <span class="o">=</span> <span class="p">(</span><span class="n">test_scores</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
     <span class="n">postproc_baseline_fairness_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
         <span class="n">compute_fairness_metrics</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">],</span> <span class="n">y_test_pred</span><span class="p">,</span> <span class="n">test_df</span><span class="p">[</span><span class="n">sensitive_feature</span><span class="p">]))</span>
+    <span class="n">postproc_baseline_performance_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">compute_performance_metrics</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">],</span> <span class="n">y_test_pred</span><span class="p">,</span> <span class="n">test_scores</span><span class="p">))</span>
 
     <span class="n">calib_eq_odds</span> <span class="o">=</span> <span class="n">aif360_PostProcessing_Wrapper</span><span class="p">(</span><span class="n">PostProcessingAlgorithms</span><span class="o">.</span><span class="n">CALIBRATED_EQ_ODDS</span><span class="p">,</span>
                                                 <span class="n">unprivileged_groups</span><span class="o">=</span><span class="n">unprivileged_groups</span><span class="p">,</span>
@@ -5504,6 +5860,9 @@ sensitive-group) combination.</p>
 
     <span class="n">calib_eq_odds_fairness_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">compute_fairness_metrics</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">],</span> <span class="n">calib_eq_odds_trans_pred</span><span class="p">,</span> <span class="n">test_df</span><span class="p">[</span><span class="n">sensitive_feature</span><span class="p">]))</span>
     <span class="n">eq_odds_fairness_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">compute_fairness_metrics</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">],</span> <span class="n">eq_odds_trans_pred</span><span class="p">,</span> <span class="n">test_df</span><span class="p">[</span><span class="n">sensitive_feature</span><span class="p">]))</span>
+
+    <span class="n">calib_eq_odds_performance_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">compute_performance_metrics</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">],</span> <span class="n">calib_eq_odds_trans_pred</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">calib_eq_odds_trans_pred</span><span class="p">))))</span>
+    <span class="n">eq_odds_performance_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">compute_performance_metrics</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">],</span> <span class="n">eq_odds_trans_pred</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">eq_odds_trans_pred</span><span class="p">))))</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">kor</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.10</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">model_selection</span><span class="o">/</span><span class="n">_split</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">805</span><span class="p">:</span> <span class="ne">UserWarning</span><span class="p">:</span> <span class="n">The</span> <span class="n">least</span> <span class="n">populated</span> <span class="k">class</span><span class="w"> </span><span class="nc">in</span> <span class="n">y</span> <span class="n">has</span> <span class="n">only</span> <span class="mi">2</span> <span class="n">members</span><span class="p">,</span> <span class="n">which</span> <span class="ow">is</span> <span class="n">less</span> <span class="n">than</span> <span class="n">n_splits</span><span class="o">=</span><span class="mf">5.</span>
@@ -5525,8 +5884,25 @@ sensitive-group) combination.</p>
                  <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Baseline vs Equalized Odds&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_276_0.png" src="_images/main_276_0.png" />
-<img alt="_images/main_276_1.png" src="_images/main_276_1.png" />
+<img alt="_images/main_281_0.png" src="_images/main_281_0.png" />
+<img alt="_images/main_281_1.png" src="_images/main_281_1.png" />
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">metrics_bar_plot</span><span class="p">(</span><span class="n">postproc_baseline_performance_metrics</span><span class="p">,</span>
+                 <span class="n">calib_eq_odds_performance_metrics</span><span class="p">,</span>
+                 <span class="n">label1</span><span class="o">=</span><span class="s1">&#39;w/o post-processing&#39;</span><span class="p">,</span>
+                 <span class="n">label2</span><span class="o">=</span><span class="s1">&#39;with post-processing&#39;</span><span class="p">,</span>
+                 <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">,</span><span class="s1">&#39;precision&#39;</span><span class="p">,</span> <span class="s1">&#39;recall&#39;</span><span class="p">,</span> <span class="s1">&#39;auc&#39;</span><span class="p">],</span>
+                 <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Baseline vs Calibrated Equalized Odds Performances&quot;</span><span class="p">)</span>
+
+<span class="n">metrics_bar_plot</span><span class="p">(</span><span class="n">postproc_baseline_performance_metrics</span><span class="p">,</span>
+                 <span class="n">eq_odds_performance_metrics</span><span class="p">,</span>
+                 <span class="n">label1</span><span class="o">=</span><span class="s1">&#39;w/o post-processing&#39;</span><span class="p">,</span>
+                 <span class="n">label2</span><span class="o">=</span><span class="s1">&#39;with post-processing&#39;</span><span class="p">,</span>
+                 <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">,</span><span class="s1">&#39;precision&#39;</span><span class="p">,</span> <span class="s1">&#39;recall&#39;</span><span class="p">,</span> <span class="s1">&#39;auc&#39;</span><span class="p">],</span>
+                 <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Baseline vs Equalized Odds Performances&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/main_282_0.png" src="_images/main_282_0.png" />
+<img alt="_images/main_282_1.png" src="_images/main_282_1.png" />
 <p>For the same reason of before, the eq_dots produces the same results as
 the baseline since it leaves the predictions as they are, while the
 calibrated_eq_dots improves the solution. Then, if we look at the
@@ -5588,6 +5964,10 @@ feature:</p>
 <span class="n">eq_odds_fairness_metrics</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">calib_eq_odds_fairness_metrics</span> <span class="o">=</span> <span class="p">[]</span>
 
+<span class="n">postproc_baseline_performance_metrics</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">eq_odds_performance_metrics</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">calib_eq_odds_performance_metrics</span> <span class="o">=</span> <span class="p">[]</span>
+
 <span class="k">for</span> <span class="n">fold</span><span class="p">,</span> <span class="p">(</span><span class="n">train_idx</span><span class="p">,</span> <span class="n">test_idx</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">kf</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">postproc_df</span><span class="p">,</span> <span class="n">postproc_df</span><span class="p">[</span><span class="n">target</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">+</span><span class="n">postproc_df</span><span class="p">[</span><span class="n">sensitive_feature</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">))):</span>
     <span class="n">train_df</span> <span class="o">=</span> <span class="n">postproc_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">train_idx</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
     <span class="n">test_df</span> <span class="o">=</span> <span class="n">postproc_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">test_idx</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -5601,6 +5981,7 @@ feature:</p>
     <span class="n">y_test_pred</span> <span class="o">=</span> <span class="p">(</span><span class="n">test_scores</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
     <span class="n">postproc_baseline_fairness_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
         <span class="n">compute_fairness_metrics</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">],</span> <span class="n">y_test_pred</span><span class="p">,</span> <span class="n">test_df</span><span class="p">[</span><span class="n">sensitive_feature</span><span class="p">]))</span>
+    <span class="n">postproc_baseline_performance_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">compute_performance_metrics</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">],</span> <span class="n">y_test_pred</span><span class="p">,</span> <span class="n">test_scores</span><span class="p">))</span>
 
     <span class="n">calib_eq_odds</span> <span class="o">=</span> <span class="n">aif360_PostProcessing_Wrapper</span><span class="p">(</span><span class="n">PostProcessingAlgorithms</span><span class="o">.</span><span class="n">CALIBRATED_EQ_ODDS</span><span class="p">,</span>
                                                 <span class="n">unprivileged_groups</span><span class="o">=</span><span class="n">unprivileged_groups</span><span class="p">,</span>
@@ -5621,6 +6002,9 @@ feature:</p>
 
     <span class="n">calib_eq_odds_fairness_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">compute_fairness_metrics</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">],</span> <span class="n">calib_eq_odds_trans_pred</span><span class="p">,</span> <span class="n">test_df</span><span class="p">[</span><span class="n">sensitive_feature</span><span class="p">]))</span>
     <span class="n">eq_odds_fairness_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">compute_fairness_metrics</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">],</span> <span class="n">eq_odds_trans_pred</span><span class="p">,</span> <span class="n">test_df</span><span class="p">[</span><span class="n">sensitive_feature</span><span class="p">]))</span>
+
+    <span class="n">calib_eq_odds_performance_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">compute_performance_metrics</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">],</span> <span class="n">calib_eq_odds_trans_pred</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">calib_eq_odds_trans_pred</span><span class="p">))))</span>
+    <span class="n">eq_odds_performance_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">compute_performance_metrics</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">],</span> <span class="n">eq_odds_trans_pred</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">eq_odds_trans_pred</span><span class="p">))))</span>
 </pre></div>
 </div>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">metrics_bar_plot</span><span class="p">(</span><span class="n">postproc_baseline_fairness_metrics</span><span class="p">,</span>
@@ -5638,8 +6022,25 @@ feature:</p>
                  <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Baseline vs Equalized Odds&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="_images/main_283_0.png" src="_images/main_283_0.png" />
-<img alt="_images/main_283_1.png" src="_images/main_283_1.png" />
+<img alt="_images/main_289_0.png" src="_images/main_289_0.png" />
+<img alt="_images/main_289_1.png" src="_images/main_289_1.png" />
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">metrics_bar_plot</span><span class="p">(</span><span class="n">postproc_baseline_performance_metrics</span><span class="p">,</span>
+                 <span class="n">calib_eq_odds_performance_metrics</span><span class="p">,</span>
+                 <span class="n">label1</span><span class="o">=</span><span class="s1">&#39;w/o post-processing&#39;</span><span class="p">,</span>
+                 <span class="n">label2</span><span class="o">=</span><span class="s1">&#39;with post-processing&#39;</span><span class="p">,</span>
+                 <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">,</span><span class="s1">&#39;precision&#39;</span><span class="p">,</span> <span class="s1">&#39;recall&#39;</span><span class="p">,</span> <span class="s1">&#39;auc&#39;</span><span class="p">],</span>
+                 <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Baseline vs Calibrated Equalized Odds Performances&quot;</span><span class="p">)</span>
+
+<span class="n">metrics_bar_plot</span><span class="p">(</span><span class="n">postproc_baseline_performance_metrics</span><span class="p">,</span>
+                 <span class="n">eq_odds_performance_metrics</span><span class="p">,</span>
+                 <span class="n">label1</span><span class="o">=</span><span class="s1">&#39;w/o post-processing&#39;</span><span class="p">,</span>
+                 <span class="n">label2</span><span class="o">=</span><span class="s1">&#39;with post-processing&#39;</span><span class="p">,</span>
+                 <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">,</span><span class="s1">&#39;precision&#39;</span><span class="p">,</span> <span class="s1">&#39;recall&#39;</span><span class="p">,</span> <span class="s1">&#39;auc&#39;</span><span class="p">],</span>
+                 <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Baseline vs Equalized Odds Performances&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/main_290_0.png" src="_images/main_290_0.png" />
+<img alt="_images/main_290_1.png" src="_images/main_290_1.png" />
 <p>We can observe that the Calibrated Equalized Odds further improves the
 metrics, but this can just give us an intuition since it is not a real
 data augmentation. A possible improvement would be to use a powerful
@@ -5650,78 +6051,174 @@ according to the real distribution.</p>
 </section>
 
 
-          </div>
-          
-        </div>
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to Fair Candidate Screening System’s documentation!</p>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="Main">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">Fair-Candidate-Screening-System</a></h1>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-
-
-
-
-
-
-
-<search id="searchbox" style="display: none" role="search">
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</search>
-<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Fair Candidate Screening System</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#setup">Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#dataset-loading">Dataset Loading</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data Preparation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-preprocessing">Data Preprocessing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#bias-detection">Bias detection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#bias-mitigation-techniques">Bias mitigation techniques</a></li>
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-loading">Dataset Loading</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preparation">Data Preparation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preprocessing">Data Preprocessing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ids">IDs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distance-km">Distance Km</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#candidate-gender">Candidate Gender</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#candidate-province">Candidate Province</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#domicile-region">Domicile Region</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#age-buckets">Age Buckets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#candidate-education">Candidate Education</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#job-contract-type">Job Contract Type</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#job-category">Job Category</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#job-sector">Job Sector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#job-work-province">Job Work Province</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations">Considerations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bias-detection">Bias detection</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation-matrix">Correlation Matrix</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bias-mitigation-techniques">Bias mitigation techniques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utils">Utils</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing">Pre-Processing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#utility-functions">Utility functions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-train-test-split">Naive Train-Test split</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#fairness-metrics">Fairness metrics</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-metrics">Performance metrics</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stratified-k-fold-cross-validation">Stratified K-fold cross-validation</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-on-target-feature">1) Splitting on “target” feature</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-on-target-sensitive-feature">2) Splitting on “target + sensitive” feature</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-rebalancing-checking-the-robustness-of-our-pipeline">Data rebalancing: checking the robustness of our pipeline</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Fairness metrics</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Performance metrics</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Considerations</a></li>
 </ul>
 </li>
 </ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Fair Candidate Screening System’s documentation!</a></li>
-  </ul></li>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-processing">In-Processing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adversarial-debiasing">1) Adversarial Debiasing</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#baseline">Baseline</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#with-different-adversary-weights">With different adversary weights</a></li>
 </ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fauci">2) FaUCI</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#prejudice-remover">3) Prejudice Remover</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#results-using-different-stratification">Results using different stratification</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Adversarial Debiasing</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">FaUCI</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Prejudice Remover</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#results-without-using-cross-validation">Results without using Cross-validation</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Adversarial Debiasing</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">FaUCI</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#prejudice-removal">Prejudice Removal</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#results-duplicating-positive-samples">Results duplicating positive samples</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">FaUCI</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Prejudice Removal</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-processing">Post-Processing</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/main.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
 </div>
 
-
-
-
-
-
-
-
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &#169;.
-      
-      |
-      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
-      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
-      
-      |
-      <a href="_sources/main.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
+  </footer>
   </body>
 </html>

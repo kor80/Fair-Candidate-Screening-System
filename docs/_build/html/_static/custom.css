@@ -1,1 +1,7 @@
-/* This file intentionally left blank. */
+body {
+  font-family: "Georgia", serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
