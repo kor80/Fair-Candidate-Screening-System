@@ -1161,6 +1161,9 @@ Domicile Region
         'sardegna': 'south'
     }
 
+Sensitive feature selection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. code:: ipython3
 
     grouped_regions = df1['cand_domicile_region'].apply(lambda r : region_groups[str.lower(r)])
@@ -1920,7 +1923,12 @@ lable distribution is almosto uniform.
 Bias detection
 --------------
 
-Detecting bias on the dataset using Statistical Parity Difference
+Before applying any mitigation strategies, an initial bias assessment was conducted on the dataset.
+
+For each **(sensitive feature, target feature)** pair we computed the **Statistical Parity Difference** fairness metric,
+which measures the difference in positive outcome probability across groups.
+This metric allow us to assess **the dataset's inherent bias** before applying any fairness interventions.
+
 
 .. code:: ipython3
 

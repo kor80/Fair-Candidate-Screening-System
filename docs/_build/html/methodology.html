@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>A Fair Candidate Screening System’s documentation &#8212; Fair-Candidate-Screening-System 0.1 documentation</title>
+    <title>Methodology &#8212; Fair-Candidate-Screening-System 0.1 documentation</title>
   
   
   
@@ -42,10 +42,11 @@
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'methodology';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Dataset and use-case context" href="dataset_usecase.html" />
+    <link rel="next" title="Fair Candidate Screening System" href="main.html" />
+    <link rel="prev" title="Dataset and use-case context" href="dataset_usecase.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -103,7 +104,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -131,8 +132,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="methodology.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     Methodology
   </a>
 </li>
@@ -201,10 +202,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -226,8 +225,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="methodology.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     Methodology
   </a>
 </li>
@@ -261,6 +260,15 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"></div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -281,7 +289,31 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Methodology</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
               
               
               
@@ -289,40 +321,59 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="a-fair-candidate-screening-system-s-documentation">
-<h1>A Fair Candidate Screening System’s documentation<a class="headerlink" href="#a-fair-candidate-screening-system-s-documentation" title="Link to this heading">#</a></h1>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
-<p>In this work, we propose a fairness-aware AI-based system for candidate screening,
-grounded in the analysis of a real-world dataset provided by the Adecco Group.
-The dataset consists of AI-generated candidate-job matches enriched with demographic
-and educational information. Our approach aims to detect and mitigate structural
-and cognitive biases that may arise during algorithmic matching processes.
-We begin by analyzing the data distribution to identify patterns of disparity,
-and subsequently evaluate the fairness of the existing recommendation mechanism using
-established bias metrics. To promote more equitable outcomes, we explore preprocessing
-strategies and fairness-aware ranking techniques.</p>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="dataset_usecase.html">Dataset and use-case context</a></li>
-<li class="toctree-l1"><a class="reference internal" href="methodology.html">Methodology</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methodology.html#data-cleaning-selection">1. Data Cleaning (Selection)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="methodology.html#data-loading-understanding">2. Data Loading &amp; Understanding</a></li>
-<li class="toctree-l2"><a class="reference internal" href="methodology.html#sensitive-feature-selection">Sensitive feature selection</a></li>
+  <section id="methodology">
+<h1>Methodology<a class="headerlink" href="#methodology" title="Link to this heading">#</a></h1>
+<section id="data-cleaning-selection">
+<h2>1. Data Cleaning (Selection)<a class="headerlink" href="#data-cleaning-selection" title="Link to this heading">#</a></h2>
+<p>In this initial phase, the raw dataset is subjected to a cleaning and selection process to ensure a consistent,
+noise-free foundation suitable for the classification phase.</p>
+</section>
+<section id="data-loading-understanding">
+<h2>2. Data Loading &amp; Understanding<a class="headerlink" href="#data-loading-understanding" title="Link to this heading">#</a></h2>
+<section id="feature-selection">
+<h3>2.1 Feature selection<a class="headerlink" href="#feature-selection" title="Link to this heading">#</a></h3>
+<p>In this phase, all dataset features are statistically analyzed.</p>
+<p>For each variable, the following indicators are computed:</p>
+<ul class="simple">
+<li><p>Missing values (count and percentage)</p></li>
+<li><p>Minimum, maximum, mean, standard deviation</p></li>
+<li><p>1st percentile, 2nd percentile (median), 3rd percentile</p></li>
+<li><p>Data type (numeric, categorical, boolean, etc.)</p></li>
+<li><p>Number of distinct values</p></li>
+<li><p>Variable distribution (via histograms or density plots)</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="main.html">Fair Candidate Screening System</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="main.html#setup">Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="main.html#dataset-loading">Dataset Loading</a></li>
-<li class="toctree-l2"><a class="reference internal" href="main.html#data-preparation">Data Preparation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="main.html#data-preprocessing">Data Preprocessing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="main.html#bias-detection">Bias detection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="main.html#bias-mitigation-techniques">Bias mitigation techniques</a></li>
+<p>Additionally, the following have been identified:</p>
+<ul class="simple">
+<li><p><strong>Sensitive features</strong> (e.g., gender, age, domicile_region)</p></li>
+<li><p>The <strong>target feature(s)</strong> (the variable to be predicted, such as <strong>hiring</strong>)</p></li>
 </ul>
-</li>
+</section>
+<section id="proxy-identification">
+<h3>2.2 Proxy Identification<a class="headerlink" href="#proxy-identification" title="Link to this heading">#</a></h3>
+<p>This step aims to identify <strong>proxy features</strong>, i.e., variables that are not directly sensitive but are <strong>correlated</strong> with one or more sensitive attributes and may introduce indirect bias.</p>
+<ul class="simple">
+<li><p>A <strong>correlation matrix</strong> was generated across all features, with visual representation (e.g., heatmap)</p></li>
+<li><p>Significant correlation thresholds were defined (e.g., Pearson &gt; 0.7) to highlight potential proxies</p></li>
+<li><p>Variables highly correlated with sensitive features were reviewed to assess their impact on the model</p></li>
 </ul>
-</div>
+</section>
+<section id="bias-detection">
+<h3>2.3 Bias Detection<a class="headerlink" href="#bias-detection" title="Link to this heading">#</a></h3>
+<p>Before applying any mitigation strategies, an initial bias assessment was conducted on the dataset.</p>
+<p>For each <strong>(sensitive feature, target feature)</strong> pair we computed the <strong>Statistical Parity Difference</strong> fairness metric,
+which measures the difference in positive outcome probability across groups.
+This metric allow us to assess <strong>the dataset’s inherent bias</strong> before applying any fairness interventions.</p>
+</section>
+</section>
+<section id="sensitive-feature-selection">
+<h2>Sensitive feature selection<a class="headerlink" href="#sensitive-feature-selection" title="Link to this heading">#</a></h2>
+<p>We identified a key intersectional variable to serve as a <strong>sensitive</strong> feature in our fairness analysis: <em>grouped_region_gender</em>. This variable combines candidates’ domicile regions—categorized into geographic macro-areas (North, Center, South)—with their self-reported gender.</p>
+<p>The construction of this variable follows two steps:</p>
+<ul class="simple">
+<li><p><strong>Semantic definition</strong>: We first defined the grouping schema based on domain knowledge and contextual relevance. Geographic regions were aggregated to capture meaningful socioeconomic and cultural distinctions, while gender was included as an established axis of potential bias in hiring.</p></li>
+<li><p><strong>Validation of assumptions</strong>: We then examined the resulting distributions in the data to verify that our semantic definitions reflected actual patterns of variation and imbalance. This step ensured that the combined variable meaningfully captured intersectional disparities potentially relevant to fairness assessments.</p></li>
+</ul>
+<p>By explicitly modeling <em>grouped_region_gender</em> as a sensitive attribute, we aimed to detect nuanced forms of bias that might arise at the intersection of location and gender, which could be overlooked in analyses considering these features independently.</p>
 </section>
 </section>
 
@@ -336,12 +387,21 @@ strategies and fairness-aware ranking techniques.</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
+    <a class="left-prev"
        href="dataset_usecase.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Dataset and use-case context</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="main.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Dataset and use-case context</p>
+        <p class="prev-next-title">Fair Candidate Screening System</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -364,7 +424,14 @@ strategies and fairness-aware ranking techniques.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-cleaning-selection">1. Data Cleaning (Selection)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-loading-understanding">2. Data Loading &amp; Understanding</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-selection">2.1 Feature selection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proxy-identification">2.2 Proxy Identification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bias-detection">2.3 Bias Detection</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sensitive-feature-selection">Sensitive feature selection</a></li>
 </ul>
   </nav></div>
 
@@ -372,7 +439,7 @@ strategies and fairness-aware ranking techniques.</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/index.rst.txt"
+      <li><a href="_sources/methodology.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
