@@ -2129,27 +2129,18 @@ Utils
 Pre-Processing
 ~~~~~~~~~~~~~~
 
-In this section, we preprocess the dataset to prepare it for fair
-machine learning analysis. The preprocessing steps include handling
-missing values, encoding categorical variables, and normalizing
-numerical features. We also define the sensitive attribute(s) for
-fairness evaluation.
+Pre-processing bias mitigation is so named because it operates *before* model training, directly transforming the input data to reduce bias in learned predictions. The idea is to modify features, labels, or sample weights so that the resulting data better satisfies fairness constraints—without changing the model itself. For example, techniques like **Reweighing**, **Disparate Impact Remover**, and **Learning Fair Representations (LFR)** adjust the data distribution to balance outcomes across sensitive groups. We evaluate these methods using fairness metrics such as **Demographic Parity Ratio (DPR), Equalized Odds Ratio (EOR)**, and Statistical Parity Difference **(SPD)**, as well as performance metrics like Accuracy, Precision, Recall, and AUC. Results show that while pre-processing can improve fairness, it sometimes introduces trade-offs with predictive performance, and the variability in fairness metrics highlights the impact of data imbalance, especially for under-represented groups. 
 
-**Fairness Metrics Used:** - **Demographic Parity Ratio (DPR):**
-Measures the ratio of positive outcomes across sensitive groups. -
-**Equalized Odds Ratio (EOR):** Compares true positive and false
-positive rates across groups. - **Statistical Parity Difference (SPD):**
-Assesses the difference in selection rates between groups.
+In particular, for the pre-processing bias mitigation techniques used:
+- **Reweighing**: Adjusts the weights of training examples to balance the distribution of outcomes across sensitive groups, helping reduce bias before training.
+- **Learning Fair Representations (LFR)**: Learns an intermediate data representation that retains predictive information while removing group-related bias, so models trained on it produce fairer outcomes.
+- **Disparate Impact Remover (DIR)**: Edits feature values to reduce their dependence on sensitive attributes, aiming to mitigate disparate impact while preserving data utility.
 
-**Performance Metrics Used:** - **Accuracy** - **Precision** -
-**Recall** - **AUC (Area Under the ROC Curve)**
+In particular, regarding the metrics used:
+- **Demographic Parity Ratio (DPR)**: Measures the ratio of positive prediction rates between sensitive groups. A DPR close to 1 indicates that different groups receive positive outcomes at similar rates, promoting demographic parity.
+- **Equalized Odds Ratio (EOR)**: Compares true positive rates and false positive rates across groups. This metric assesses whether the model makes errors (both misses and false alarms) equally across groups, aiming for fairness in both opportunity and error distribution.
+- **Statistical Parity Difference (SPD)**: Calculates the difference in selection (positive prediction) rates between groups. A smaller SPD suggests that the likelihood of receiving a positive outcome does not depend strongly on group membership, supporting fairness in selection.
 
-We evaluate both baseline and pre-processing fairness mitigation methods
-(Reweighing, Disparate Impact Remover, LFR) using these metrics. The
-results show that while some approaches can improve fairness (as
-measured by DPR, EOR, and SPD), there may be trade-offs with performance
-metrics. Additionally, the variance in fairness metrics highlights the
-impact of data imbalance, especially for under-represented groups.
 
 Utility functions
 ^^^^^^^^^^^^^^^^^
