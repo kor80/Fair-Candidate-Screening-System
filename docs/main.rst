@@ -1059,6 +1059,12 @@ Domicile Region
 .. image:: main_files/main_59_0.png
 
 
+Sensitive feature selection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+We identified a key intersectional variable to serve as a **sensitive** feature in our fairness analysis:
+*grouped_region_gender* (also called *grouped_region*). This variable combines candidates’ domicile regions—categorized into geographic
+macro-areas (North, Center, South)—with their self-reported gender.
+
 .. code:: ipython3
 
     df_copy = df1.copy()
@@ -1160,9 +1166,6 @@ Domicile Region
         'sicilia': 'south',
         'sardegna': 'south'
     }
-
-Sensitive feature selection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: ipython3
 
@@ -1928,7 +1931,6 @@ Before applying any mitigation strategies, an initial bias assessment was conduc
 For each **(sensitive feature, target feature)** pair we computed the **Statistical Parity Difference** fairness metric,
 which measures the difference in positive outcome probability across groups.
 This metric allow us to assess **the dataset's inherent bias** before applying any fairness interventions.
-
 
 .. code:: ipython3
 

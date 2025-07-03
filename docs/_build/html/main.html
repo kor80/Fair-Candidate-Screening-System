@@ -1216,6 +1216,12 @@ will use the same encoder for both of them.</p>
 </pre></div>
 </div>
 <img alt="_images/main_59_0.png" src="_images/main_59_0.png" />
+</section>
+<section id="sensitive-feature-selection">
+<h3>Sensitive feature selection<a class="headerlink" href="#sensitive-feature-selection" title="Link to this heading">#</a></h3>
+<p>We identified a key intersectional variable to serve as a <strong>sensitive</strong> feature in our fairness analysis:
+<em>grouped_region_gender</em> (also called <em>grouped_region</em>). This variable combines candidates’ domicile regions—categorized into geographic
+macro-areas (North, Center, South)—with their self-reported gender.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_copy</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">df_copy</span><span class="p">[</span><span class="s1">&#39;gender_region&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_copy</span><span class="p">[</span><span class="s1">&#39;cand_domicile_region&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">df_copy</span><span class="p">[</span><span class="s1">&#39;cand_gender&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
 </pre></div>
@@ -1304,9 +1310,6 @@ will use the same encoder for both of them.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
-<section id="sensitive-feature-selection">
-<h3>Sensitive feature selection<a class="headerlink" href="#sensitive-feature-selection" title="Link to this heading">#</a></h3>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grouped_regions</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;cand_domicile_region&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">r</span> <span class="p">:</span> <span class="n">region_groups</span><span class="p">[</span><span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">(</span><span class="n">r</span><span class="p">)])</span>
 <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;grouped_regions&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">grouped_regions</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;cand_gender&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
 </pre></div>

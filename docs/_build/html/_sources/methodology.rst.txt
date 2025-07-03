@@ -51,8 +51,6 @@ This metric allow us to assess **the dataset's inherent bias** before applying a
 Sensitive feature selection
 ----------------------------
 
-We identified a key intersectional variable to serve as a **sensitive** feature in our fairness analysis: *grouped_region_gender*. This variable combines candidates’ domicile regions—categorized into geographic macro-areas (North, Center, South)—with their self-reported gender.
-
 The construction of this variable follows two steps:
 
 - **Semantic definition**: We first defined the grouping schema based on domain knowledge and contextual relevance. Geographic regions were aggregated to capture meaningful socioeconomic and cultural distinctions, while gender was included as an established axis of potential bias in hiring.
