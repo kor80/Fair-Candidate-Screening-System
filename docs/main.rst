@@ -2033,6 +2033,17 @@ Correlation Matrix
 Bias mitigation techniques
 --------------------------
 
+Mitigating bias means applying strategies to reduce unfair or discriminatory patterns in model predictions, ensuring equitable outcomes across sensitive groups. Our approach evaluates three main categories of bias mitigation techniques:
+
+* **Pre-processing**: Transforms the training data to reduce bias before model training. For example, reweighting examples or editing features to balance the predicted hiring rates across ``grouped_region-by_gender`` subgroups.
+
+* **In-processing**: Integrates fairness constraints directly into the learning algorithm, so the model simultaneously optimizes predictive performance and fair treatment across sensitive groups, mitigating disparities in hiring predictions during training.
+
+* **Post-processing**: Adjusts the model’s predictions after training to reduce unfair outcomes, modifying decision thresholds or outputs to ensure that under-represented groups—like *south females*—receive fairer predicted hiring rates without retraining the model.
+
+By applying these techniques, we aim to reduce bias against disadvantaged subgroups while maintaining strong performance on hiring predictions.
+
+
 Utils
 ~~~~~
 
