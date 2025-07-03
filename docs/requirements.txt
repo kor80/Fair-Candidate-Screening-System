@@ -3,3 +3,5 @@ nbsphinx
 myst-parser
 ipython
 ipykernel
+pydata-sphinx-theme
+
