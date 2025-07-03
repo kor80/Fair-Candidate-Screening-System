@@ -2011,7 +2011,8 @@ This metric allow us to assess **the dataset's inherent bias** before applying a
     (hired=1, grouped_regions=4.0) -> -0.5522135458508735
     (hired=1, grouped_regions=5.0) -> -0.08712907347134624
 
-
+As we can see, the *hiring* rate for **South region females** exhibits the **most unfair** outcome. This means that the positive prediction rate (probability of being hired) is significantly lower for the south female subgroup compared to others. 
+This disparity indicates that the model tends to under-select candidates from this group!
 
 Correlation Matrix
 ~~~~~~~~~~~~~~~~~~
